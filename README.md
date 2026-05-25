@@ -8,6 +8,8 @@
 
 **Who this is for:** A hypothetical B2B vendor that sells tools to GTM Engineers — Clay competitors, Apollo competitors, AI agent infrastructure for RevOps, sequencing-platform challengers — who needs a *measured* model of their buyer persona, not an anecdote-based one, to drive outbound targeting + messaging copy.
 
+![Persona Graph dashboard — d3-force layout with sources (pink), content (topic-colored), and engagers (ICP-tier-colored)](docs/screenshots/dashboard.png)
+
 **Loom demo:** _coming once the build runs end-to-end — embed lands here_.
 
 **Why the GTM Engineer persona for this build?** Because if you're reading this README, you probably are one (or hire them). You should see yourself on the graph.
