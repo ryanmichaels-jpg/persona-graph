@@ -6,9 +6,11 @@
 >
 > The point: stop guessing what the persona consumes. Look at it.
 
+**Who this is for:** A hypothetical B2B vendor that sells tools to GTM Engineers — Clay competitors, Apollo competitors, AI agent infrastructure for RevOps, sequencing-platform challengers — who needs a *measured* model of their buyer persona, not an anecdote-based one, to drive outbound targeting + messaging copy.
+
 **Loom demo:** _coming once the build runs end-to-end — embed lands here_.
 
-**Why the GTM Engineer persona?** Because if you're reading this README, you probably are one. You should see yourself on the graph.
+**Why the GTM Engineer persona for this build?** Because if you're reading this README, you probably are one (or hire them). You should see yourself on the graph.
 
 ---
 
