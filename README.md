@@ -1,5 +1,7 @@
 # Persona Graph
 
+**▶ Live demo: [persona-graph.vercel.app](https://persona-graph.vercel.app)** — click into it, hover the nodes, filter by topic. The dashboard renders the committed synthetic seed on every request.
+
 > Reps build mental models of their buyer persona from anecdote. "Our buyer is a VP of Sales at a Series B SaaS company, probably tired of Salesforce, follows a few people on LinkedIn." Cool. Now show me which LinkedIn posts they actually engage with, which tools they complain about by name, which subreddits they lurk in, and which other people you'd be selling to alongside them.
 >
 > Persona Graph scrapes LinkedIn KOLs, subreddits, and X handles for a target persona — the **GTM Engineer**, in v1 — and renders the data as a force-directed graph: sources in the perimeter, content in the middle, engagers around the content they engage with, colored by topic and sized by ICP fit.
