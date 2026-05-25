@@ -1,0 +1,39 @@
+# Secrets
+.env
+.env.local
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# Per-run outputs — the SYNTHETIC SEED data/intel.db IS committed per
+# Shawn's Nexus Intel pattern (diffable data layer). Real scrape outputs
+# go to data/raw_scrapes/ and are gitignored.
+data/raw_scrapes/
+data/*.duckdb
+data/*.duckdb.wal
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+logs/
