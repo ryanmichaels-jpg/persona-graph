@@ -49,26 +49,54 @@ export function PersonaGraphView({ data, width = 1040, height = 640 }: Props) {
   const [tick, setTick] = useState(0);
   const simRef = useRef<Simulation<SimNode, SimLink> | null>(null);
 
-  // Clone nodes/edges into a stable simulation-bound array (once per data ref)
+  // Clone nodes/edges into a stable simulation-bound array (once per data ref).
+  // Pre-seed initial positions deterministically (cheap hash-based scatter)
+  // so the first render shows nodes immediately, before the simulation ticks.
   const { simNodes, simLinks } = useMemo(() => {
-    const ns: SimNode[] = data.nodes.map((n) => ({ ...n }));
+    function seed(id: string): number {
+      let h = 0;
+      for (let i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) | 0;
+      return Math.abs(h);
+    }
+    const ns: SimNode[] = data.nodes.map((n) => {
+      const h = seed(n.id);
+      // Initial layout: sources on outer ring, content in middle, engagers in mid-ring.
+      const cx = width / 2;
+      const cy = height / 2;
+      let radius: number;
+      let angle: number;
+      if (n.type === "source") {
+        radius = Math.min(width, height) * 0.42;
+        angle = (h % 360) * (Math.PI / 180);
+      } else if (n.type === "content") {
+        radius = (h % 80) + 20;
+        angle = (h % 360) * (Math.PI / 180);
+      } else {
+        radius = ((h % 140) + 140);
+        angle = (h % 360) * (Math.PI / 180);
+      }
+      return {
+        ...n,
+        x: cx + Math.cos(angle) * radius,
+        y: cy + Math.sin(angle) * radius,
+      };
+    });
     const idIndex = new Map(ns.map((n) => [n.id, n] as const));
     const ls: SimLink[] = [];
     for (const e of data.edges) {
       const s = idIndex.get(e.source);
       const t = idIndex.get(e.target);
       if (!s || !t) continue;
-      const link: SimLink = {
+      ls.push({
         source: s,
         target: t,
         type: e.type,
         weight: e.weight,
         engagement_type: e.engagement_type,
-      };
-      ls.push(link);
+      });
     }
     return { simNodes: ns, simLinks: ls };
-  }, [data]);
+  }, [data, width, height]);
 
   useEffect(() => {
     const sim = forceSimulation<SimNode, SimLink>(simNodes)
