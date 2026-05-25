@@ -1,0 +1,227 @@
+# Persona Graph seed config — GTM Engineer persona.
+#
+# Every random pick downstream is seeded from this file, so the same config
+# produces the same synthetic SQLite DB every time.
+
+random_seed: 42
+
+persona:
+  id: gtm_engineer
+  name: GTM Engineer
+  description: |
+    Ex-rep who learned to code and now builds internal GTM tooling.
+    Lives in HubSpot/Salesforce + Python + Claude + Clay + Apollo + n8n.
+    Pain points: messy CRM data, $500/mo SaaS overlap, hand-rolling outreach
+    sequences that should be automated. Career stage: 1-4 years post-IC, often
+    the first GTM Engineer at a Series A/B company.
+
+# --- Content sources --------------------------------------------------------
+# Synthetic KOL handles. Real-shape, fake-name — we never commit real PII.
+content_sources:
+  - id: src_li_01
+    platform: linkedin
+    handle: shawnla90-syn
+    display_name: Shawn L. (synthetic stand-in)
+    description: GTM-coding-agent author archetype
+    follower_count: 24500
+  - id: src_li_02
+    platform: linkedin
+    handle: revops-rebecca-syn
+    display_name: Rebecca M. (synthetic)
+    description: VP RevOps voice
+    follower_count: 18200
+  - id: src_li_03
+    platform: linkedin
+    handle: gtm-engineer-greg-syn
+    display_name: Greg P. (synthetic)
+    description: First-GTM-Engineer-at-Series-B archetype
+    follower_count: 9800
+  - id: src_li_04
+    platform: linkedin
+    handle: clay-power-user-syn
+    display_name: Priya K. (synthetic)
+    description: Clay power user, table-as-product
+    follower_count: 6100
+  - id: src_li_05
+    platform: linkedin
+    handle: cmo-builder-syn
+    display_name: Mateo R. (synthetic)
+    description: Builder-CMO archetype
+    follower_count: 32000
+  - id: src_rd_01
+    platform: reddit
+    handle: r/sales
+    display_name: r/sales
+    description: Real subreddit, synthetic threads
+    follower_count: 1100000
+  - id: src_rd_02
+    platform: reddit
+    handle: r/revops
+    display_name: r/revops
+    description: Real subreddit, synthetic threads
+    follower_count: 28000
+  - id: src_rd_03
+    platform: reddit
+    handle: r/SaaS
+    display_name: r/SaaS
+    description: Real subreddit, synthetic threads
+    follower_count: 450000
+  - id: src_tw_01
+    platform: twitter
+    handle: '@rev_ops_brett-syn'
+    display_name: Brett N. (synthetic)
+    description: GTM engineer / builder
+    follower_count: 14200
+  - id: src_tw_02
+    platform: twitter
+    handle: '@gtm_eng_anna-syn'
+    display_name: Anna F. (synthetic)
+    description: Cold outreach / sequencing
+    follower_count: 8400
+
+# --- Topic taxonomy ---------------------------------------------------------
+# Topics drive the d3-force node fill color. 8 covers the GTM-engineer surface.
+topics:
+  - id: topic_ai_tools
+    name: AI tooling
+    description: Claude, ChatGPT, Cursor, agents, MCP, LLM workflows
+    color: '#60a5fa'
+  - id: topic_crm_frustration
+    name: CRM frustration
+    description: Salesforce / HubSpot pain, workflows that break, data quality
+    color: '#f87171'
+  - id: topic_revops_automation
+    name: RevOps automation
+    description: Clay, n8n, Zapier, custom scripts replacing $500/mo SaaS
+    color: '#fbbf24'
+  - id: topic_data_quality
+    name: Data quality
+    description: Dedup, enrichment, CRM hygiene, waterfall enrichment
+    color: '#a78bfa'
+  - id: topic_outbound_sequencing
+    name: Outbound sequencing
+    description: Cold email, sequencing platforms, personalization
+    color: '#34d399'
+  - id: topic_hiring_gtm_eng
+    name: Hiring GTM Engineer
+    description: Job posts for first / additional GTM Engineer roles
+    color: '#ec4899'
+  - id: topic_pipeline_review
+    name: Pipeline review
+    description: Stale deals, forecast hygiene, champion tracking
+    color: '#f97316'
+  - id: topic_career_transitions
+    name: Career transitions
+    description: SDR → AE → RevOps → GTM Engineer career arc discussion
+    color: '#94a3b8'
+
+# --- Signal taxonomy --------------------------------------------------------
+signals:
+  # pain
+  - { id: sig_pain_export_sf,  signal_type: pain, name: "exports-from-salesforce-pain", description: "I keep exporting from SF / building reports manually" }
+  - { id: sig_pain_clay_cost,  signal_type: pain, name: "clay-pricing-pain",            description: "Clay costs too much / I could write this in 50 lines" }
+  - { id: sig_pain_hs_wf,      signal_type: pain, name: "hubspot-workflow-pain",        description: "HubSpot workflows are unreliable / break silently" }
+  - { id: sig_pain_glue_code,  signal_type: pain, name: "rev-ops-is-glue-code",          description: "Modern RevOps job is just glue code" }
+  - { id: sig_pain_stale_list, signal_type: pain, name: "stale-deal-list-pain",         description: "Spent X hours on the stale deal list again" }
+  # buying
+  - { id: sig_buy_hire_gtm,    signal_type: buying, name: "hiring-first-gtm-engineer",  description: "Job post: looking for our first / additional GTM Engineer" }
+  - { id: sig_buy_clay_alt,    signal_type: buying, name: "looking-for-clay-alternative", description: "Looking for a cheaper Clay alternative" }
+  - { id: sig_buy_what_using,  signal_type: buying, name: "what-is-everyone-using",     description: "What is everyone using for X" }
+  - { id: sig_buy_rfp,         signal_type: buying, name: "rfp-mention",                description: "Active RFP / evaluation in progress" }
+  # tool_mention
+  - { id: sig_tool_claude,     signal_type: tool_mention, name: "mentions-claude",      description: "Mentions Claude / Anthropic by name" }
+  - { id: sig_tool_apollo,     signal_type: tool_mention, name: "mentions-apollo",      description: "Mentions Apollo.io by name" }
+  - { id: sig_tool_clay,       signal_type: tool_mention, name: "mentions-clay",        description: "Mentions Clay by name" }
+
+# --- Hero content (always present, anchors the demo storyline) --------------
+# 5 hero posts that the Loom voiceover should call out.
+hero_content:
+  - id: post_hero_001
+    source_id: src_li_03   # gtm-engineer-greg-syn
+    body_text: |
+      Just shipped a stale-deal scanner that does in 3 minutes what used to
+      take me 4 hours of LinkedIn tab-flipping. Replaced our $500/mo Clay tier
+      with Apollo + Claude. RevOps in 2026 is just glue code and most of it
+      should be free.
+    reaction_count: 412
+    comment_count: 67
+    topics:    [topic_ai_tools, topic_revops_automation, topic_pipeline_review]
+    signals:   [sig_pain_clay_cost, sig_pain_stale_list, sig_pain_glue_code, sig_tool_claude, sig_tool_apollo, sig_tool_clay]
+    hero_note: "anchor for re-engagement automation storyline"
+
+  - id: post_hero_002
+    source_id: src_rd_02   # r/revops
+    body_text: |
+      Anyone else feeling like RevOps in 2026 is just LLM glue code? I spent
+      this week writing Python that hits the HubSpot API and asks Claude to
+      decide if a deal is dead. That's the job now. My title still says
+      "Senior RevOps Manager" though.
+    reaction_count: 289
+    comment_count: 184
+    topics:    [topic_career_transitions, topic_revops_automation, topic_ai_tools]
+    signals:   [sig_pain_glue_code, sig_tool_claude]
+    hero_note: "voice-of-customer for the career transition arc"
+
+  - id: post_hero_003
+    source_id: src_tw_01   # rev_ops_brett-syn
+    body_text: |
+      Hiring our first GTM Engineer at Stripe. Send candidates. Must be ex-rep
+      who learned to code, not full-stack pretending to do GTM. Archetype A only.
+    reaction_count: 1242
+    comment_count: 312
+    topics:    [topic_hiring_gtm_eng, topic_career_transitions]
+    signals:   [sig_buy_hire_gtm]
+    hero_note: "live job-post buying signal — hot lead"
+
+  - id: post_hero_004
+    source_id: src_li_04   # clay-power-user-syn
+    body_text: |
+      Hot take: Clay is great, but 80% of the table operations I do could be
+      a 200-line Python script that reads from Apollo and writes to HubSpot.
+      Asked Claude to scaffold it last weekend, it took 90 minutes.
+    reaction_count: 178
+    comment_count: 41
+    topics:    [topic_revops_automation, topic_ai_tools, topic_data_quality]
+    signals:   [sig_pain_clay_cost, sig_buy_clay_alt, sig_tool_clay, sig_tool_claude, sig_tool_apollo]
+    hero_note: "tool-substitution thesis content"
+
+  - id: post_hero_005
+    source_id: src_rd_03   # r/SaaS
+    body_text: |
+      Salesforce is unusable in 2026. We spent more time on data hygiene than
+      on actual selling. We're migrating to HubSpot but the workflows there
+      break silently too. What's everyone actually using?
+    reaction_count: 521
+    comment_count: 297
+    topics:    [topic_crm_frustration, topic_data_quality]
+    signals:   [sig_pain_export_sf, sig_pain_hs_wf, sig_buy_what_using]
+    hero_note: "high-engagement CRM-frustration post — magnet for ICP engagers"
+
+# --- Non-hero content generation parameters ---------------------------------
+content_generation:
+  total_items: 80                # includes the 5 hero, so 75 random generated
+  items_per_source_range: [4, 12]
+  reactions_range: [3, 350]
+  comments_range: [0, 60]
+  topics_per_item_range: [1, 3]
+  signals_per_item_range: [0, 3]
+  days_old_range: [1, 120]
+
+engager_generation:
+  total_engagers: 40
+  engagements_per_engager_range: [1, 6]
+  # Title mix — drives ICP scoring tier distribution.
+  title_distribution:
+    "GTM Engineer":               10
+    "Senior RevOps Manager":      6
+    "Head of RevOps":             3
+    "Revenue Operations Lead":    2
+    "VP of Sales":                4
+    "Sales Development Manager":  3
+    "Director of Marketing":      2
+    "Founder & CEO":              3
+    "Account Executive":          2
+    "SDR":                        2
+    "Product Marketing Manager":  2
+    "Software Engineer":          1
+  company_size_buckets: [50, 100, 250, 500, 1000, 2500, 5000]

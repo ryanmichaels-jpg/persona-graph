@@ -36,7 +36,7 @@ Apify CLI scrapers (LinkedIn KOLs + subreddits + X handles)  →  SQLite-in-git
 - **Data layer:** SQLite, committed to git as `data/intel.db` — Shawn Logan's Nexus Intel pattern. `git log data/intel.db` is the audit trail; `git checkout <sha> -- data/intel.db` time-travels the dataset.
 - **Scrapers:** Apify CLI (`apify call <actor-id> --input <json>`). Specific actors per Shawn: `harvestapi` for LinkedIn, `apidojo/tweet-scraper` for X, `trudax/reddit-scraper-lite` for Reddit. **Optional** — synthetic seed is committed so the demo runs offline.
 - **Analysis:** Anthropic Claude — **Haiku 4.5** for content tagging (batched), **Sonnet 4.6** for the persona-summary narrative in the dashboard. Used via the SDK (not subprocess — see "Differences from Shawn" below).
-- **Dashboard:** Next.js 15 (App Router) + d3-force + better-sqlite3. Server-renders the graph data from SQLite — no API hop. Dark theme, matches the cleanroom + pipeline-resurrection report design system.
+- **Dashboard:** Next.js 15 (App Router) + d3-force. Reads `data/graph.json` — a snapshot exported from SQLite by `scripts/export_graph_data.py`. No native deps, no `better-sqlite3` (avoids the node-gyp compile failure on some macOS setups). Dark theme, matches the cleanroom + pipeline-resurrection report design system.
 - **Deploy:** Railway (read-only DB on prod, writes happen locally then commit-push). **Optional** — demo can be local + screenshot.
 
 ---
@@ -59,7 +59,7 @@ Apify CLI scrapers (LinkedIn KOLs + subreddits + X handles)  →  SQLite-in-git
 |---|---|---|
 | **SQLite-in-git as the data layer** | **Shawn Logan's Nexus Intel (Chapter 12 of gtm-coding-agent)** | `data/intel.db` + the whole schema philosophy |
 | Apify CLI scraper pattern (`apify call <actor-id>`) | Shawn's Nexus Intel | `src/persona_graph/scrape/` (optional path) |
-| Read-only SQLite from a Next.js server component | Shawn's Nexus Intel | `lib/db.ts` + `app/page.tsx` |
+| Read-only data layer for the Next.js dashboard | Shawn's Nexus Intel (adapted) | `scripts/export_graph_data.py` → `data/graph.json` → `app/page.tsx` |
 | 4-dimension ICP scoring (b2b + seniority + size + relevance) | gooseworks-ai/goose-skills → `icp-persona-builder` + `champion-tracker` | `src/persona_graph/icp/scorer.py` |
 | Pain-language signal taxonomy | gooseworks-ai/goose-skills → `pain-language-engagers` | `src/persona_graph/analyze/signals.py` |
 | Voice-of-customer synthesis | gooseworks-ai/goose-skills → `voice-of-customer-synthesizer` | dashboard persona-summary narrative |
@@ -67,6 +67,7 @@ Apify CLI scrapers (LinkedIn KOLs + subreddits + X handles)  →  SQLite-in-git
 ## Differences from Shawn's Nexus Intel (be honest in the README)
 
 - **Claude via SDK, not subprocess.** Shawn uses `claude --print` for batches. We use the Anthropic SDK because the other 4 portfolio projects use the SDK, and consistency beats marginal cost at <100-item scale.
+- **Dashboard reads JSON, not SQLite directly.** Shawn's Next.js queries SQLite via `better-sqlite3` (native binding). We export to `data/graph.json` instead — sidesteps node-gyp compile pain and keeps the dashboard pure-JS. SQLite is still the canonical write layer.
 - **No Railway deploy in v1.** Local + screenshot for the Loom. Railway deploy documented in `docs/demo.md` as optional.
 - **One persona, not many.** Schema supports multiple personas but the seeded DB only has GTM Engineer. Adding more is the obvious v2 extension.
 
