@@ -1,0 +1,4348 @@
+{
+  "persona": {
+    "id": "gtm_engineer",
+    "name": "GTM Engineer",
+    "description": "Ex-rep who learned to code and now builds internal GTM tooling.\nLives in HubSpot/Salesforce + Python + Claude + Clay + Apollo + n8n.\nPain points: messy CRM data, $500/mo SaaS overlap, hand-rolling outreach\nsequences that should be automated. Career stage: 1-4 years post-IC, often\nthe first GTM Engineer at a Series A/B company.\n"
+  },
+  "topics": [
+    {
+      "id": "topic_revops_automation",
+      "name": "RevOps automation",
+      "color": "#fbbf24",
+      "content_count": 36
+    },
+    {
+      "id": "topic_ai_tools",
+      "name": "AI tooling",
+      "color": "#60a5fa",
+      "content_count": 32
+    },
+    {
+      "id": "topic_crm_frustration",
+      "name": "CRM frustration",
+      "color": "#f87171",
+      "content_count": 28
+    },
+    {
+      "id": "topic_hiring_gtm_eng",
+      "name": "Hiring GTM Engineer",
+      "color": "#ec4899",
+      "content_count": 28
+    },
+    {
+      "id": "topic_pipeline_review",
+      "name": "Pipeline review",
+      "color": "#f97316",
+      "content_count": 26
+    },
+    {
+      "id": "topic_data_quality",
+      "name": "Data quality",
+      "color": "#a78bfa",
+      "content_count": 24
+    },
+    {
+      "id": "topic_outbound_sequencing",
+      "name": "Outbound sequencing",
+      "color": "#34d399",
+      "content_count": 21
+    },
+    {
+      "id": "topic_career_transitions",
+      "name": "Career transitions",
+      "color": "#94a3b8",
+      "content_count": 19
+    }
+  ],
+  "signals": [
+    {
+      "id": "sig_buy_hire_gtm",
+      "name": "hiring-first-gtm-engineer",
+      "signal_type": "buying",
+      "content_count": 16
+    },
+    {
+      "id": "sig_buy_clay_alt",
+      "name": "looking-for-clay-alternative",
+      "signal_type": "buying",
+      "content_count": 14
+    },
+    {
+      "id": "sig_buy_what_using",
+      "name": "what-is-everyone-using",
+      "signal_type": "buying",
+      "content_count": 11
+    },
+    {
+      "id": "sig_buy_rfp",
+      "name": "rfp-mention",
+      "signal_type": "buying",
+      "content_count": 8
+    },
+    {
+      "id": "sig_pain_clay_cost",
+      "name": "clay-pricing-pain",
+      "signal_type": "pain",
+      "content_count": 17
+    },
+    {
+      "id": "sig_pain_stale_list",
+      "name": "stale-deal-list-pain",
+      "signal_type": "pain",
+      "content_count": 15
+    },
+    {
+      "id": "sig_pain_glue_code",
+      "name": "rev-ops-is-glue-code",
+      "signal_type": "pain",
+      "content_count": 14
+    },
+    {
+      "id": "sig_pain_export_sf",
+      "name": "exports-from-salesforce-pain",
+      "signal_type": "pain",
+      "content_count": 13
+    },
+    {
+      "id": "sig_pain_hs_wf",
+      "name": "hubspot-workflow-pain",
+      "signal_type": "pain",
+      "content_count": 13
+    },
+    {
+      "id": "sig_tool_claude",
+      "name": "mentions-claude",
+      "signal_type": "tool_mention",
+      "content_count": 25
+    },
+    {
+      "id": "sig_tool_clay",
+      "name": "mentions-clay",
+      "signal_type": "tool_mention",
+      "content_count": 24
+    },
+    {
+      "id": "sig_tool_apollo",
+      "name": "mentions-apollo",
+      "signal_type": "tool_mention",
+      "content_count": 17
+    }
+  ],
+  "nodes": [
+    {
+      "id": "src_li_01",
+      "type": "source",
+      "label": "Shawn L. (synthetic stand-in)",
+      "platform": "linkedin",
+      "follower_count": 24500,
+      "content_count": 6,
+      "color": "#ec4899",
+      "size": 22
+    },
+    {
+      "id": "src_li_02",
+      "type": "source",
+      "label": "Rebecca M. (synthetic)",
+      "platform": "linkedin",
+      "follower_count": 18200,
+      "content_count": 7,
+      "color": "#ec4899",
+      "size": 23
+    },
+    {
+      "id": "src_li_03",
+      "type": "source",
+      "label": "Greg P. (synthetic)",
+      "platform": "linkedin",
+      "follower_count": 9800,
+      "content_count": 5,
+      "color": "#ec4899",
+      "size": 21
+    },
+    {
+      "id": "src_li_04",
+      "type": "source",
+      "label": "Priya K. (synthetic)",
+      "platform": "linkedin",
+      "follower_count": 6100,
+      "content_count": 12,
+      "color": "#ec4899",
+      "size": 24
+    },
+    {
+      "id": "src_li_05",
+      "type": "source",
+      "label": "Mateo R. (synthetic)",
+      "platform": "linkedin",
+      "follower_count": 32000,
+      "content_count": 5,
+      "color": "#ec4899",
+      "size": 21
+    },
+    {
+      "id": "src_rd_01",
+      "type": "source",
+      "label": "r/sales",
+      "platform": "reddit",
+      "follower_count": 1100000,
+      "content_count": 8,
+      "color": "#ec4899",
+      "size": 24
+    },
+    {
+      "id": "src_rd_02",
+      "type": "source",
+      "label": "r/revops",
+      "platform": "reddit",
+      "follower_count": 28000,
+      "content_count": 13,
+      "color": "#ec4899",
+      "size": 24
+    },
+    {
+      "id": "src_rd_03",
+      "type": "source",
+      "label": "r/SaaS",
+      "platform": "reddit",
+      "follower_count": 450000,
+      "content_count": 7,
+      "color": "#ec4899",
+      "size": 23
+    },
+    {
+      "id": "src_tw_01",
+      "type": "source",
+      "label": "Brett N. (synthetic)",
+      "platform": "twitter",
+      "follower_count": 14200,
+      "content_count": 11,
+      "color": "#ec4899",
+      "size": 24
+    },
+    {
+      "id": "src_tw_02",
+      "type": "source",
+      "label": "Anna F. (synthetic)",
+      "platform": "twitter",
+      "follower_count": 8400,
+      "content_count": 6,
+      "color": "#ec4899",
+      "size": 22
+    },
+    {
+      "id": "post_hero_001",
+      "type": "content",
+      "label": "Just shipped a stale-deal scanner that does in 3 minutes what used to take me 4 \u2026",
+      "full_text": "Just shipped a stale-deal scanner that does in 3 minutes what used to\ntake me 4 hours of LinkedIn tab-flipping. Replaced our $500/mo Clay tier\nwith Apollo + Claude. RevOps in 2026 is just glue code and most of it\nshould be free.",
+      "source_id": "src_li_03",
+      "engagement": 479,
+      "age_days": 6,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_pipeline_review",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_pain_clay_cost",
+        "sig_pain_glue_code",
+        "sig_pain_stale_list",
+        "sig_tool_apollo",
+        "sig_tool_claude",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_ai_tools",
+      "color": "#60a5fa",
+      "size": 14,
+      "is_hero": true
+    },
+    {
+      "id": "post_hero_002",
+      "type": "content",
+      "label": "Anyone else feeling like RevOps in 2026 is just LLM glue code? I spent this week\u2026",
+      "full_text": "Anyone else feeling like RevOps in 2026 is just LLM glue code? I spent\nthis week writing Python that hits the HubSpot API and asks Claude to\ndecide if a deal is dead. That's the job now. My title still says\n\"Senior RevOps Manager\" though.",
+      "source_id": "src_rd_02",
+      "engagement": 473,
+      "age_days": 3,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_career_transitions",
+        "topic_crm_frustration",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_pain_glue_code",
+        "sig_tool_claude"
+      ],
+      "primary_topic_id": "topic_ai_tools",
+      "color": "#60a5fa",
+      "size": 14,
+      "is_hero": true
+    },
+    {
+      "id": "post_hero_003",
+      "type": "content",
+      "label": "Hiring our first GTM Engineer at Stripe. Send candidates. Must be ex-rep who lea\u2026",
+      "full_text": "Hiring our first GTM Engineer at Stripe. Send candidates. Must be ex-rep\nwho learned to code, not full-stack pretending to do GTM. Archetype A only.",
+      "source_id": "src_tw_01",
+      "engagement": 1554,
+      "age_days": 11,
+      "topic_ids": [
+        "topic_career_transitions",
+        "topic_hiring_gtm_eng"
+      ],
+      "signal_ids": [
+        "sig_buy_hire_gtm"
+      ],
+      "primary_topic_id": "topic_career_transitions",
+      "color": "#94a3b8",
+      "size": 20,
+      "is_hero": true
+    },
+    {
+      "id": "post_hero_004",
+      "type": "content",
+      "label": "Hot take: Clay is great, but 80% of the table operations I do could be a 200-lin\u2026",
+      "full_text": "Hot take: Clay is great, but 80% of the table operations I do could be\na 200-line Python script that reads from Apollo and writes to HubSpot.\nAsked Claude to scaffold it last weekend, it took 90 minutes.",
+      "source_id": "src_li_04",
+      "engagement": 219,
+      "age_days": 10,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_crm_frustration",
+        "topic_data_quality",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_buy_clay_alt",
+        "sig_pain_clay_cost",
+        "sig_tool_apollo",
+        "sig_tool_claude",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_ai_tools",
+      "color": "#60a5fa",
+      "size": 9,
+      "is_hero": true
+    },
+    {
+      "id": "post_hero_005",
+      "type": "content",
+      "label": "Salesforce is unusable in 2026. We spent more time on data hygiene than on actua\u2026",
+      "full_text": "Salesforce is unusable in 2026. We spent more time on data hygiene than\non actual selling. We're migrating to HubSpot but the workflows there\nbreak silently too. What's everyone actually using?",
+      "source_id": "src_rd_03",
+      "engagement": 818,
+      "age_days": 10,
+      "topic_ids": [
+        "topic_crm_frustration",
+        "topic_data_quality"
+      ],
+      "signal_ids": [
+        "sig_buy_what_using",
+        "sig_pain_export_sf",
+        "sig_pain_hs_wf"
+      ],
+      "primary_topic_id": "topic_crm_frustration",
+      "color": "#f87171",
+      "size": 20,
+      "is_hero": true
+    },
+    {
+      "id": "post_00006",
+      "type": "content",
+      "label": "If you can build a Clay table AND a HubSpot workflow, DMs open. Archetype A.",
+      "full_text": "If you can build a Clay table AND a HubSpot workflow, DMs open. Archetype A.",
+      "source_id": "src_li_02",
+      "engagement": 79,
+      "age_days": 120,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_crm_frustration",
+        "topic_hiring_gtm_eng",
+        "topic_outbound_sequencing",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_pain_hs_wf",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_hiring_gtm_eng",
+      "color": "#ec4899",
+      "size": 6,
+      "is_hero": false
+    },
+    {
+      "id": "post_00007",
+      "type": "content",
+      "label": "Looking for a Clay alternative that's not also $349/mo. Recommendations?",
+      "full_text": "Looking for a Clay alternative that's not also $349/mo. Recommendations?",
+      "source_id": "src_li_05",
+      "engagement": 66,
+      "age_days": 94,
+      "topic_ids": [
+        "topic_crm_frustration",
+        "topic_hiring_gtm_eng",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_buy_clay_alt",
+        "sig_buy_hire_gtm",
+        "sig_pain_clay_cost",
+        "sig_tool_claude",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_revops_automation",
+      "color": "#fbbf24",
+      "size": 6,
+      "is_hero": false
+    },
+    {
+      "id": "post_00008",
+      "type": "content",
+      "label": "Cursor + Claude is now my CRM stack. I haven't opened HubSpot's UI in weeks.",
+      "full_text": "Cursor + Claude is now my CRM stack. I haven't opened HubSpot's UI in weeks.",
+      "source_id": "src_rd_02",
+      "engagement": 79,
+      "age_days": 93,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_crm_frustration",
+        "topic_pipeline_review"
+      ],
+      "signal_ids": [
+        "sig_buy_hire_gtm",
+        "sig_pain_stale_list",
+        "sig_tool_claude",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_ai_tools",
+      "color": "#60a5fa",
+      "size": 6,
+      "is_hero": false
+    },
+    {
+      "id": "post_00009",
+      "type": "content",
+      "label": "Asked Claude to draft an Apollo waterfall yesterday. Saved me a Clay subscriptio\u2026",
+      "full_text": "Asked Claude to draft an Apollo waterfall yesterday. Saved me a Clay subscription.",
+      "source_id": "src_rd_02",
+      "engagement": 339,
+      "age_days": 89,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_data_quality",
+        "topic_pipeline_review",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_tool_apollo",
+        "sig_tool_claude",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_ai_tools",
+      "color": "#60a5fa",
+      "size": 11,
+      "is_hero": false
+    },
+    {
+      "id": "post_00010",
+      "type": "content",
+      "label": "Stopped using sequencing tools. Just Python + Claude + the rep's calendar now.",
+      "full_text": "Stopped using sequencing tools. Just Python + Claude + the rep's calendar now.",
+      "source_id": "src_tw_02",
+      "engagement": 312,
+      "age_days": 18,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_outbound_sequencing"
+      ],
+      "signal_ids": [
+        "sig_pain_glue_code",
+        "sig_pain_stale_list",
+        "sig_tool_claude"
+      ],
+      "primary_topic_id": "topic_outbound_sequencing",
+      "color": "#34d399",
+      "size": 11,
+      "is_hero": false
+    },
+    {
+      "id": "post_00011",
+      "type": "content",
+      "label": "GTM Engineer is the only role in 2026 where rep experience is a feature, not a b\u2026",
+      "full_text": "GTM Engineer is the only role in 2026 where rep experience is a feature, not a bug.",
+      "source_id": "src_rd_02",
+      "engagement": 214,
+      "age_days": 98,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_career_transitions",
+        "topic_hiring_gtm_eng",
+        "topic_outbound_sequencing"
+      ],
+      "signal_ids": [
+        "sig_pain_export_sf"
+      ],
+      "primary_topic_id": "topic_career_transitions",
+      "color": "#94a3b8",
+      "size": 9,
+      "is_hero": false
+    },
+    {
+      "id": "post_00012",
+      "type": "content",
+      "label": "Our CRM is 40% garbage. I keep exporting to Pandas and fixing it there.",
+      "full_text": "Our CRM is 40% garbage. I keep exporting to Pandas and fixing it there.",
+      "source_id": "src_li_04",
+      "engagement": 74,
+      "age_days": 9,
+      "topic_ids": [
+        "topic_crm_frustration",
+        "topic_data_quality",
+        "topic_pipeline_review"
+      ],
+      "signal_ids": [],
+      "primary_topic_id": "topic_crm_frustration",
+      "color": "#f87171",
+      "size": 6,
+      "is_hero": false
+    },
+    {
+      "id": "post_00013",
+      "type": "content",
+      "label": "Hiring our first GTM Engineer. Must have closed a deal AND shipped a Python scri\u2026",
+      "full_text": "Hiring our first GTM Engineer. Must have closed a deal AND shipped a Python script.",
+      "source_id": "src_rd_02",
+      "engagement": 149,
+      "age_days": 61,
+      "topic_ids": [
+        "topic_hiring_gtm_eng",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_buy_hire_gtm",
+        "sig_buy_what_using",
+        "sig_pain_hs_wf",
+        "sig_pain_stale_list"
+      ],
+      "primary_topic_id": "topic_hiring_gtm_eng",
+      "color": "#ec4899",
+      "size": 7,
+      "is_hero": false
+    },
+    {
+      "id": "post_00014",
+      "type": "content",
+      "label": "Salesforce reports take longer to build than the analysis itself.",
+      "full_text": "Salesforce reports take longer to build than the analysis itself.",
+      "source_id": "src_rd_01",
+      "engagement": 242,
+      "age_days": 92,
+      "topic_ids": [
+        "topic_crm_frustration",
+        "topic_pipeline_review"
+      ],
+      "signal_ids": [
+        "sig_pain_export_sf"
+      ],
+      "primary_topic_id": "topic_crm_frustration",
+      "color": "#f87171",
+      "size": 9,
+      "is_hero": false
+    },
+    {
+      "id": "post_00015",
+      "type": "content",
+      "label": "HubSpot workflows broke silently for 3 weeks and nobody noticed.",
+      "full_text": "HubSpot workflows broke silently for 3 weeks and nobody noticed.",
+      "source_id": "src_tw_02",
+      "engagement": 232,
+      "age_days": 32,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_crm_frustration",
+        "topic_hiring_gtm_eng"
+      ],
+      "signal_ids": [
+        "sig_buy_hire_gtm",
+        "sig_pain_hs_wf"
+      ],
+      "primary_topic_id": "topic_crm_frustration",
+      "color": "#f87171",
+      "size": 9,
+      "is_hero": false
+    },
+    {
+      "id": "post_00016",
+      "type": "content",
+      "label": "Salesforce reports take longer to build than the analysis itself.",
+      "full_text": "Salesforce reports take longer to build than the analysis itself.",
+      "source_id": "src_rd_01",
+      "engagement": 322,
+      "age_days": 23,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_crm_frustration",
+        "topic_outbound_sequencing"
+      ],
+      "signal_ids": [
+        "sig_buy_hire_gtm",
+        "sig_pain_export_sf",
+        "sig_tool_apollo"
+      ],
+      "primary_topic_id": "topic_crm_frustration",
+      "color": "#f87171",
+      "size": 11,
+      "is_hero": false
+    },
+    {
+      "id": "post_00017",
+      "type": "content",
+      "label": "Looking for a Clay alternative that's not also $349/mo. Recommendations?",
+      "full_text": "Looking for a Clay alternative that's not also $349/mo. Recommendations?",
+      "source_id": "src_tw_01",
+      "engagement": 114,
+      "age_days": 86,
+      "topic_ids": [
+        "topic_hiring_gtm_eng",
+        "topic_outbound_sequencing",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_buy_clay_alt",
+        "sig_pain_clay_cost",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_revops_automation",
+      "color": "#fbbf24",
+      "size": 7,
+      "is_hero": false
+    },
+    {
+      "id": "post_00018",
+      "type": "content",
+      "label": "Anthropic's MCP is the right abstraction for GTM tooling. Change my mind.",
+      "full_text": "Anthropic's MCP is the right abstraction for GTM tooling. Change my mind.",
+      "source_id": "src_rd_02",
+      "engagement": 80,
+      "age_days": 66,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_data_quality",
+        "topic_hiring_gtm_eng"
+      ],
+      "signal_ids": [
+        "sig_buy_rfp",
+        "sig_tool_apollo",
+        "sig_tool_claude",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_ai_tools",
+      "color": "#60a5fa",
+      "size": 6,
+      "is_hero": false
+    },
+    {
+      "id": "post_00019",
+      "type": "content",
+      "label": "Spent the weekend deduping 5,000 accounts. Rapidfuzz + Claude tie-breaker = 3 mi\u2026",
+      "full_text": "Spent the weekend deduping 5,000 accounts. Rapidfuzz + Claude tie-breaker = 3 minutes.",
+      "source_id": "src_tw_01",
+      "engagement": 40,
+      "age_days": 29,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_data_quality"
+      ],
+      "signal_ids": [
+        "sig_buy_rfp",
+        "sig_buy_what_using",
+        "sig_pain_stale_list",
+        "sig_tool_claude"
+      ],
+      "primary_topic_id": "topic_data_quality",
+      "color": "#a78bfa",
+      "size": 5,
+      "is_hero": false
+    },
+    {
+      "id": "post_00020",
+      "type": "content",
+      "label": "Pulled all closed-lost deals from 2024 with 'bad timing'. Half of them got funde\u2026",
+      "full_text": "Pulled all closed-lost deals from 2024 with 'bad timing'. Half of them got funded since.",
+      "source_id": "src_li_01",
+      "engagement": 90,
+      "age_days": 114,
+      "topic_ids": [
+        "topic_pipeline_review"
+      ],
+      "signal_ids": [],
+      "primary_topic_id": "topic_pipeline_review",
+      "color": "#f97316",
+      "size": 6,
+      "is_hero": false
+    },
+    {
+      "id": "post_00021",
+      "type": "content",
+      "label": "Don't pay for SaaS that wraps a free API. It's a 90-minute Python script.",
+      "full_text": "Don't pay for SaaS that wraps a free API. It's a 90-minute Python script.",
+      "source_id": "src_rd_03",
+      "engagement": 107,
+      "age_days": 52,
+      "topic_ids": [
+        "topic_career_transitions",
+        "topic_crm_frustration",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_tool_claude"
+      ],
+      "primary_topic_id": "topic_revops_automation",
+      "color": "#fbbf24",
+      "size": 7,
+      "is_hero": false
+    },
+    {
+      "id": "post_00022",
+      "type": "content",
+      "label": "GTM Engineer JD update: dropped the 'full-stack' requirement. We just need someo\u2026",
+      "full_text": "GTM Engineer JD update: dropped the 'full-stack' requirement. We just need someone who shipped.",
+      "source_id": "src_li_05",
+      "engagement": 89,
+      "age_days": 6,
+      "topic_ids": [
+        "topic_hiring_gtm_eng"
+      ],
+      "signal_ids": [],
+      "primary_topic_id": "topic_hiring_gtm_eng",
+      "color": "#ec4899",
+      "size": 6,
+      "is_hero": false
+    },
+    {
+      "id": "post_00023",
+      "type": "content",
+      "label": "If your VP of Sales is still pulling reports manually in 2026, we have problems.",
+      "full_text": "If your VP of Sales is still pulling reports manually in 2026, we have problems.",
+      "source_id": "src_li_02",
+      "engagement": 308,
+      "age_days": 26,
+      "topic_ids": [
+        "topic_crm_frustration",
+        "topic_data_quality"
+      ],
+      "signal_ids": [
+        "sig_buy_what_using"
+      ],
+      "primary_topic_id": "topic_crm_frustration",
+      "color": "#f87171",
+      "size": 11,
+      "is_hero": false
+    },
+    {
+      "id": "post_00024",
+      "type": "content",
+      "label": "Stopped using sequencing tools. Just Python + Claude + the rep's calendar now.",
+      "full_text": "Stopped using sequencing tools. Just Python + Claude + the rep's calendar now.",
+      "source_id": "src_rd_03",
+      "engagement": 28,
+      "age_days": 93,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_crm_frustration",
+        "topic_outbound_sequencing",
+        "topic_pipeline_review"
+      ],
+      "signal_ids": [
+        "sig_pain_glue_code",
+        "sig_tool_apollo",
+        "sig_tool_claude"
+      ],
+      "primary_topic_id": "topic_outbound_sequencing",
+      "color": "#34d399",
+      "size": 5,
+      "is_hero": false
+    },
+    {
+      "id": "post_00025",
+      "type": "content",
+      "label": "Spent the weekend deduping 5,000 accounts. Rapidfuzz + Claude tie-breaker = 3 mi\u2026",
+      "full_text": "Spent the weekend deduping 5,000 accounts. Rapidfuzz + Claude tie-breaker = 3 minutes.",
+      "source_id": "src_rd_01",
+      "engagement": 98,
+      "age_days": 5,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_data_quality"
+      ],
+      "signal_ids": [
+        "sig_pain_export_sf",
+        "sig_pain_glue_code",
+        "sig_tool_apollo",
+        "sig_tool_claude"
+      ],
+      "primary_topic_id": "topic_data_quality",
+      "color": "#a78bfa",
+      "size": 6,
+      "is_hero": false
+    },
+    {
+      "id": "post_00026",
+      "type": "content",
+      "label": "Looking for a GTM Engineer at Series B SaaS. Stop applying to FAANG, this is mor\u2026",
+      "full_text": "Looking for a GTM Engineer at Series B SaaS. Stop applying to FAANG, this is more fun.",
+      "source_id": "src_li_04",
+      "engagement": 113,
+      "age_days": 11,
+      "topic_ids": [
+        "topic_career_transitions",
+        "topic_hiring_gtm_eng"
+      ],
+      "signal_ids": [],
+      "primary_topic_id": "topic_hiring_gtm_eng",
+      "color": "#ec4899",
+      "size": 7,
+      "is_hero": false
+    },
+    {
+      "id": "post_00027",
+      "type": "content",
+      "label": "Salesforce reports take longer to build than the analysis itself.",
+      "full_text": "Salesforce reports take longer to build than the analysis itself.",
+      "source_id": "src_li_04",
+      "engagement": 248,
+      "age_days": 9,
+      "topic_ids": [
+        "topic_career_transitions",
+        "topic_crm_frustration",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_buy_what_using",
+        "sig_pain_export_sf",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_crm_frustration",
+      "color": "#f87171",
+      "size": 9,
+      "is_hero": false
+    },
+    {
+      "id": "post_00028",
+      "type": "content",
+      "label": "GTM Engineer JD update: dropped the 'full-stack' requirement. We just need someo\u2026",
+      "full_text": "GTM Engineer JD update: dropped the 'full-stack' requirement. We just need someone who shipped.",
+      "source_id": "src_rd_01",
+      "engagement": 290,
+      "age_days": 40,
+      "topic_ids": [
+        "topic_hiring_gtm_eng"
+      ],
+      "signal_ids": [
+        "sig_buy_what_using",
+        "sig_pain_clay_cost",
+        "sig_pain_stale_list"
+      ],
+      "primary_topic_id": "topic_hiring_gtm_eng",
+      "color": "#ec4899",
+      "size": 10,
+      "is_hero": false
+    },
+    {
+      "id": "post_00029",
+      "type": "content",
+      "label": "Ex-rep with Python > full-stack engineer learning sales. Empirically every time.",
+      "full_text": "Ex-rep with Python > full-stack engineer learning sales. Empirically every time.",
+      "source_id": "src_li_02",
+      "engagement": 376,
+      "age_days": 54,
+      "topic_ids": [
+        "topic_career_transitions",
+        "topic_crm_frustration",
+        "topic_hiring_gtm_eng"
+      ],
+      "signal_ids": [],
+      "primary_topic_id": "topic_career_transitions",
+      "color": "#94a3b8",
+      "size": 12,
+      "is_hero": false
+    },
+    {
+      "id": "post_00030",
+      "type": "content",
+      "label": "Anthropic's MCP is the right abstraction for GTM tooling. Change my mind.",
+      "full_text": "Anthropic's MCP is the right abstraction for GTM tooling. Change my mind.",
+      "source_id": "src_li_01",
+      "engagement": 141,
+      "age_days": 92,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_crm_frustration"
+      ],
+      "signal_ids": [
+        "sig_pain_hs_wf",
+        "sig_tool_claude"
+      ],
+      "primary_topic_id": "topic_ai_tools",
+      "color": "#60a5fa",
+      "size": 7,
+      "is_hero": false
+    },
+    {
+      "id": "post_00031",
+      "type": "content",
+      "label": "Spent the weekend deduping 5,000 accounts. Rapidfuzz + Claude tie-breaker = 3 mi\u2026",
+      "full_text": "Spent the weekend deduping 5,000 accounts. Rapidfuzz + Claude tie-breaker = 3 minutes.",
+      "source_id": "src_rd_01",
+      "engagement": 204,
+      "age_days": 48,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_data_quality"
+      ],
+      "signal_ids": [
+        "sig_pain_glue_code",
+        "sig_tool_claude"
+      ],
+      "primary_topic_id": "topic_data_quality",
+      "color": "#a78bfa",
+      "size": 9,
+      "is_hero": false
+    },
+    {
+      "id": "post_00032",
+      "type": "content",
+      "label": "Generic sequences are spam. Personalized at scale is the only viable cold motion\u2026",
+      "full_text": "Generic sequences are spam. Personalized at scale is the only viable cold motion.",
+      "source_id": "src_rd_02",
+      "engagement": 345,
+      "age_days": 25,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_data_quality",
+        "topic_outbound_sequencing"
+      ],
+      "signal_ids": [
+        "sig_pain_stale_list"
+      ],
+      "primary_topic_id": "topic_outbound_sequencing",
+      "color": "#34d399",
+      "size": 11,
+      "is_hero": false
+    },
+    {
+      "id": "post_00033",
+      "type": "content",
+      "label": "SDR \u2192 AE \u2192 RevOps \u2192 GTM Engineer. The progression is real and underpriced.",
+      "full_text": "SDR \u2192 AE \u2192 RevOps \u2192 GTM Engineer. The progression is real and underpriced.",
+      "source_id": "src_rd_03",
+      "engagement": 291,
+      "age_days": 61,
+      "topic_ids": [
+        "topic_career_transitions",
+        "topic_hiring_gtm_eng"
+      ],
+      "signal_ids": [
+        "sig_buy_clay_alt",
+        "sig_pain_clay_cost",
+        "sig_pain_export_sf"
+      ],
+      "primary_topic_id": "topic_career_transitions",
+      "color": "#94a3b8",
+      "size": 10,
+      "is_hero": false
+    },
+    {
+      "id": "post_00034",
+      "type": "content",
+      "label": "n8n is a gateway drug. Three weeks in I was writing my own Apollo client.",
+      "full_text": "n8n is a gateway drug. Three weeks in I was writing my own Apollo client.",
+      "source_id": "src_tw_02",
+      "engagement": 48,
+      "age_days": 94,
+      "topic_ids": [
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_pain_clay_cost",
+        "sig_tool_apollo"
+      ],
+      "primary_topic_id": "topic_revops_automation",
+      "color": "#fbbf24",
+      "size": 5,
+      "is_hero": false
+    },
+    {
+      "id": "post_00035",
+      "type": "content",
+      "label": "Hiring our first GTM Engineer. Must have closed a deal AND shipped a Python scri\u2026",
+      "full_text": "Hiring our first GTM Engineer. Must have closed a deal AND shipped a Python script.",
+      "source_id": "src_li_05",
+      "engagement": 341,
+      "age_days": 28,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_data_quality",
+        "topic_hiring_gtm_eng",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_buy_hire_gtm",
+        "sig_buy_rfp",
+        "sig_pain_clay_cost",
+        "sig_pain_stale_list"
+      ],
+      "primary_topic_id": "topic_hiring_gtm_eng",
+      "color": "#ec4899",
+      "size": 11,
+      "is_hero": false
+    },
+    {
+      "id": "post_00036",
+      "type": "content",
+      "label": "GTM Engineer is the only role in 2026 where rep experience is a feature, not a b\u2026",
+      "full_text": "GTM Engineer is the only role in 2026 where rep experience is a feature, not a bug.",
+      "source_id": "src_li_03",
+      "engagement": 285,
+      "age_days": 6,
+      "topic_ids": [
+        "topic_career_transitions",
+        "topic_data_quality",
+        "topic_hiring_gtm_eng"
+      ],
+      "signal_ids": [
+        "sig_buy_hire_gtm",
+        "sig_pain_stale_list"
+      ],
+      "primary_topic_id": "topic_career_transitions",
+      "color": "#94a3b8",
+      "size": 10,
+      "is_hero": false
+    },
+    {
+      "id": "post_00037",
+      "type": "content",
+      "label": "Our 'Customer' stage has accounts with zero contacts. That's not a customer.",
+      "full_text": "Our 'Customer' stage has accounts with zero contacts. That's not a customer.",
+      "source_id": "src_li_04",
+      "engagement": 62,
+      "age_days": 34,
+      "topic_ids": [
+        "topic_career_transitions",
+        "topic_data_quality",
+        "topic_hiring_gtm_eng"
+      ],
+      "signal_ids": [
+        "sig_pain_export_sf",
+        "sig_pain_glue_code",
+        "sig_tool_claude"
+      ],
+      "primary_topic_id": "topic_data_quality",
+      "color": "#a78bfa",
+      "size": 6,
+      "is_hero": false
+    },
+    {
+      "id": "post_00038",
+      "type": "content",
+      "label": "Anthropic's MCP is the right abstraction for GTM tooling. Change my mind.",
+      "full_text": "Anthropic's MCP is the right abstraction for GTM tooling. Change my mind.",
+      "source_id": "src_tw_01",
+      "engagement": 20,
+      "age_days": 25,
+      "topic_ids": [
+        "topic_ai_tools"
+      ],
+      "signal_ids": [
+        "sig_buy_clay_alt",
+        "sig_pain_stale_list",
+        "sig_tool_claude"
+      ],
+      "primary_topic_id": "topic_ai_tools",
+      "color": "#60a5fa",
+      "size": 5,
+      "is_hero": false
+    },
+    {
+      "id": "post_00039",
+      "type": "content",
+      "label": "Our CRM is 40% garbage. I keep exporting to Pandas and fixing it there.",
+      "full_text": "Our CRM is 40% garbage. I keep exporting to Pandas and fixing it there.",
+      "source_id": "src_li_03",
+      "engagement": 232,
+      "age_days": 89,
+      "topic_ids": [
+        "topic_crm_frustration",
+        "topic_outbound_sequencing",
+        "topic_pipeline_review"
+      ],
+      "signal_ids": [
+        "sig_buy_rfp",
+        "sig_pain_glue_code",
+        "sig_pain_hs_wf"
+      ],
+      "primary_topic_id": "topic_crm_frustration",
+      "color": "#f87171",
+      "size": 9,
+      "is_hero": false
+    },
+    {
+      "id": "post_00040",
+      "type": "content",
+      "label": "Apollo waterfall hits 70% coverage. Clay charges 5x for the last 10%.",
+      "full_text": "Apollo waterfall hits 70% coverage. Clay charges 5x for the last 10%.",
+      "source_id": "src_tw_01",
+      "engagement": 128,
+      "age_days": 27,
+      "topic_ids": [
+        "topic_crm_frustration",
+        "topic_data_quality",
+        "topic_hiring_gtm_eng",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_tool_apollo",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_data_quality",
+      "color": "#a78bfa",
+      "size": 7,
+      "is_hero": false
+    },
+    {
+      "id": "post_00041",
+      "type": "content",
+      "label": "Stopped using sequencing tools. Just Python + Claude + the rep's calendar now.",
+      "full_text": "Stopped using sequencing tools. Just Python + Claude + the rep's calendar now.",
+      "source_id": "src_tw_01",
+      "engagement": 103,
+      "age_days": 103,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_outbound_sequencing",
+        "topic_pipeline_review"
+      ],
+      "signal_ids": [
+        "sig_buy_hire_gtm",
+        "sig_pain_glue_code",
+        "sig_tool_claude"
+      ],
+      "primary_topic_id": "topic_outbound_sequencing",
+      "color": "#34d399",
+      "size": 7,
+      "is_hero": false
+    },
+    {
+      "id": "post_00042",
+      "type": "content",
+      "label": "Apollo waterfall hits 70% coverage. Clay charges 5x for the last 10%.",
+      "full_text": "Apollo waterfall hits 70% coverage. Clay charges 5x for the last 10%.",
+      "source_id": "src_rd_01",
+      "engagement": 285,
+      "age_days": 98,
+      "topic_ids": [
+        "topic_data_quality",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_buy_clay_alt",
+        "sig_tool_apollo",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_data_quality",
+      "color": "#a78bfa",
+      "size": 10,
+      "is_hero": false
+    },
+    {
+      "id": "post_00043",
+      "type": "content",
+      "label": "Cold email open rates are vanity. Reply rate is the only number that matters.",
+      "full_text": "Cold email open rates are vanity. Reply rate is the only number that matters.",
+      "source_id": "src_tw_01",
+      "engagement": 222,
+      "age_days": 91,
+      "topic_ids": [
+        "topic_career_transitions",
+        "topic_outbound_sequencing",
+        "topic_pipeline_review"
+      ],
+      "signal_ids": [
+        "sig_buy_hire_gtm",
+        "sig_pain_glue_code",
+        "sig_tool_claude"
+      ],
+      "primary_topic_id": "topic_outbound_sequencing",
+      "color": "#34d399",
+      "size": 9,
+      "is_hero": false
+    },
+    {
+      "id": "post_00044",
+      "type": "content",
+      "label": "Stopped using sequencing tools. Just Python + Claude + the rep's calendar now.",
+      "full_text": "Stopped using sequencing tools. Just Python + Claude + the rep's calendar now.",
+      "source_id": "src_li_04",
+      "engagement": 284,
+      "age_days": 58,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_hiring_gtm_eng",
+        "topic_outbound_sequencing",
+        "topic_pipeline_review"
+      ],
+      "signal_ids": [
+        "sig_pain_glue_code",
+        "sig_pain_stale_list",
+        "sig_tool_claude",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_outbound_sequencing",
+      "color": "#34d399",
+      "size": 10,
+      "is_hero": false
+    },
+    {
+      "id": "post_00045",
+      "type": "content",
+      "label": "Pulled all closed-lost deals from 2024 with 'bad timing'. Half of them got funde\u2026",
+      "full_text": "Pulled all closed-lost deals from 2024 with 'bad timing'. Half of them got funded since.",
+      "source_id": "src_li_04",
+      "engagement": 268,
+      "age_days": 12,
+      "topic_ids": [
+        "topic_pipeline_review"
+      ],
+      "signal_ids": [
+        "sig_buy_hire_gtm",
+        "sig_buy_what_using"
+      ],
+      "primary_topic_id": "topic_pipeline_review",
+      "color": "#f97316",
+      "size": 10,
+      "is_hero": false
+    },
+    {
+      "id": "post_00046",
+      "type": "content",
+      "label": "Looking for a Clay alternative that's not also $349/mo. Recommendations?",
+      "full_text": "Looking for a Clay alternative that's not also $349/mo. Recommendations?",
+      "source_id": "src_li_02",
+      "engagement": 26,
+      "age_days": 62,
+      "topic_ids": [
+        "topic_pipeline_review",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_buy_clay_alt",
+        "sig_buy_hire_gtm",
+        "sig_pain_clay_cost",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_revops_automation",
+      "color": "#fbbf24",
+      "size": 5,
+      "is_hero": false
+    },
+    {
+      "id": "post_00047",
+      "type": "content",
+      "label": "If you can build a Clay table AND a HubSpot workflow, DMs open. Archetype A.",
+      "full_text": "If you can build a Clay table AND a HubSpot workflow, DMs open. Archetype A.",
+      "source_id": "src_li_05",
+      "engagement": 110,
+      "age_days": 60,
+      "topic_ids": [
+        "topic_crm_frustration",
+        "topic_hiring_gtm_eng",
+        "topic_outbound_sequencing",
+        "topic_pipeline_review",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_pain_hs_wf",
+        "sig_pain_stale_list",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_hiring_gtm_eng",
+      "color": "#ec4899",
+      "size": 7,
+      "is_hero": false
+    },
+    {
+      "id": "post_00048",
+      "type": "content",
+      "label": "If you can build a Clay table AND a HubSpot workflow, DMs open. Archetype A.",
+      "full_text": "If you can build a Clay table AND a HubSpot workflow, DMs open. Archetype A.",
+      "source_id": "src_li_01",
+      "engagement": 135,
+      "age_days": 108,
+      "topic_ids": [
+        "topic_crm_frustration",
+        "topic_data_quality",
+        "topic_hiring_gtm_eng",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_buy_clay_alt",
+        "sig_buy_hire_gtm",
+        "sig_pain_hs_wf",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_hiring_gtm_eng",
+      "color": "#ec4899",
+      "size": 7,
+      "is_hero": false
+    },
+    {
+      "id": "post_00049",
+      "type": "content",
+      "label": "Generic sequences are spam. Personalized at scale is the only viable cold motion\u2026",
+      "full_text": "Generic sequences are spam. Personalized at scale is the only viable cold motion.",
+      "source_id": "src_li_04",
+      "engagement": 124,
+      "age_days": 14,
+      "topic_ids": [
+        "topic_outbound_sequencing"
+      ],
+      "signal_ids": [
+        "sig_buy_clay_alt",
+        "sig_tool_apollo"
+      ],
+      "primary_topic_id": "topic_outbound_sequencing",
+      "color": "#34d399",
+      "size": 7,
+      "is_hero": false
+    },
+    {
+      "id": "post_00050",
+      "type": "content",
+      "label": "Claude wrote 80% of my last RevOps script. I reviewed the rest. Wild times.",
+      "full_text": "Claude wrote 80% of my last RevOps script. I reviewed the rest. Wild times.",
+      "source_id": "src_rd_02",
+      "engagement": 85,
+      "age_days": 77,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_hiring_gtm_eng",
+        "topic_pipeline_review",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_buy_rfp",
+        "sig_pain_hs_wf",
+        "sig_tool_claude"
+      ],
+      "primary_topic_id": "topic_ai_tools",
+      "color": "#60a5fa",
+      "size": 6,
+      "is_hero": false
+    },
+    {
+      "id": "post_00051",
+      "type": "content",
+      "label": "If you can build a Clay table AND a HubSpot workflow, DMs open. Archetype A.",
+      "full_text": "If you can build a Clay table AND a HubSpot workflow, DMs open. Archetype A.",
+      "source_id": "src_rd_01",
+      "engagement": 176,
+      "age_days": 19,
+      "topic_ids": [
+        "topic_crm_frustration",
+        "topic_data_quality",
+        "topic_hiring_gtm_eng",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_buy_clay_alt",
+        "sig_pain_export_sf",
+        "sig_pain_glue_code",
+        "sig_pain_hs_wf",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_hiring_gtm_eng",
+      "color": "#ec4899",
+      "size": 8,
+      "is_hero": false
+    },
+    {
+      "id": "post_00052",
+      "type": "content",
+      "label": "Replaced $500/mo Clay tier with a 200-line Python script. Honest GTM ROI.",
+      "full_text": "Replaced $500/mo Clay tier with a 200-line Python script. Honest GTM ROI.",
+      "source_id": "src_li_02",
+      "engagement": 145,
+      "age_days": 23,
+      "topic_ids": [
+        "topic_data_quality",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_pain_clay_cost",
+        "sig_pain_hs_wf",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_revops_automation",
+      "color": "#fbbf24",
+      "size": 7,
+      "is_hero": false
+    },
+    {
+      "id": "post_00053",
+      "type": "content",
+      "label": "Claude wrote 80% of my last RevOps script. I reviewed the rest. Wild times.",
+      "full_text": "Claude wrote 80% of my last RevOps script. I reviewed the rest. Wild times.",
+      "source_id": "src_rd_02",
+      "engagement": 335,
+      "age_days": 67,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_crm_frustration",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_buy_hire_gtm",
+        "sig_tool_claude"
+      ],
+      "primary_topic_id": "topic_ai_tools",
+      "color": "#60a5fa",
+      "size": 11,
+      "is_hero": false
+    },
+    {
+      "id": "post_00054",
+      "type": "content",
+      "label": "Asked Claude to draft an Apollo waterfall yesterday. Saved me a Clay subscriptio\u2026",
+      "full_text": "Asked Claude to draft an Apollo waterfall yesterday. Saved me a Clay subscription.",
+      "source_id": "src_li_02",
+      "engagement": 151,
+      "age_days": 76,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_data_quality",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_buy_what_using",
+        "sig_tool_apollo",
+        "sig_tool_claude",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_ai_tools",
+      "color": "#60a5fa",
+      "size": 8,
+      "is_hero": false
+    },
+    {
+      "id": "post_00055",
+      "type": "content",
+      "label": "Cursor + Claude is now my CRM stack. I haven't opened HubSpot's UI in weeks.",
+      "full_text": "Cursor + Claude is now my CRM stack. I haven't opened HubSpot's UI in weeks.",
+      "source_id": "src_li_01",
+      "engagement": 401,
+      "age_days": 27,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_crm_frustration"
+      ],
+      "signal_ids": [
+        "sig_tool_claude"
+      ],
+      "primary_topic_id": "topic_ai_tools",
+      "color": "#60a5fa",
+      "size": 13,
+      "is_hero": false
+    },
+    {
+      "id": "post_00056",
+      "type": "content",
+      "label": "Pulled all closed-lost deals from 2024 with 'bad timing'. Half of them got funde\u2026",
+      "full_text": "Pulled all closed-lost deals from 2024 with 'bad timing'. Half of them got funded since.",
+      "source_id": "src_tw_02",
+      "engagement": 206,
+      "age_days": 73,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_outbound_sequencing",
+        "topic_pipeline_review"
+      ],
+      "signal_ids": [
+        "sig_pain_stale_list"
+      ],
+      "primary_topic_id": "topic_pipeline_review",
+      "color": "#f97316",
+      "size": 9,
+      "is_hero": false
+    },
+    {
+      "id": "post_00057",
+      "type": "content",
+      "label": "Champion tracking is the highest-ROI thing nobody does. Apollo + a cron job.",
+      "full_text": "Champion tracking is the highest-ROI thing nobody does. Apollo + a cron job.",
+      "source_id": "src_rd_02",
+      "engagement": 318,
+      "age_days": 102,
+      "topic_ids": [
+        "topic_outbound_sequencing",
+        "topic_pipeline_review",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_tool_apollo"
+      ],
+      "primary_topic_id": "topic_pipeline_review",
+      "color": "#f97316",
+      "size": 11,
+      "is_hero": false
+    },
+    {
+      "id": "post_00058",
+      "type": "content",
+      "label": "Anthropic's MCP is the right abstraction for GTM tooling. Change my mind.",
+      "full_text": "Anthropic's MCP is the right abstraction for GTM tooling. Change my mind.",
+      "source_id": "src_rd_02",
+      "engagement": 74,
+      "age_days": 73,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_pipeline_review",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_tool_claude"
+      ],
+      "primary_topic_id": "topic_ai_tools",
+      "color": "#60a5fa",
+      "size": 6,
+      "is_hero": false
+    },
+    {
+      "id": "post_00059",
+      "type": "content",
+      "label": "HubSpot workflows broke silently for 3 weeks and nobody noticed.",
+      "full_text": "HubSpot workflows broke silently for 3 weeks and nobody noticed.",
+      "source_id": "src_rd_03",
+      "engagement": 133,
+      "age_days": 7,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_crm_frustration",
+        "topic_pipeline_review"
+      ],
+      "signal_ids": [
+        "sig_pain_hs_wf"
+      ],
+      "primary_topic_id": "topic_crm_frustration",
+      "color": "#f87171",
+      "size": 7,
+      "is_hero": false
+    },
+    {
+      "id": "post_00060",
+      "type": "content",
+      "label": "Generic sequences are spam. Personalized at scale is the only viable cold motion\u2026",
+      "full_text": "Generic sequences are spam. Personalized at scale is the only viable cold motion.",
+      "source_id": "src_li_05",
+      "engagement": 159,
+      "age_days": 12,
+      "topic_ids": [
+        "topic_outbound_sequencing"
+      ],
+      "signal_ids": [],
+      "primary_topic_id": "topic_outbound_sequencing",
+      "color": "#34d399",
+      "size": 8,
+      "is_hero": false
+    },
+    {
+      "id": "post_00061",
+      "type": "content",
+      "label": "Salesforce reports take longer to build than the analysis itself.",
+      "full_text": "Salesforce reports take longer to build than the analysis itself.",
+      "source_id": "src_li_02",
+      "engagement": 62,
+      "age_days": 1,
+      "topic_ids": [
+        "topic_crm_frustration",
+        "topic_data_quality",
+        "topic_hiring_gtm_eng"
+      ],
+      "signal_ids": [
+        "sig_buy_clay_alt",
+        "sig_pain_export_sf"
+      ],
+      "primary_topic_id": "topic_crm_frustration",
+      "color": "#f87171",
+      "size": 6,
+      "is_hero": false
+    },
+    {
+      "id": "post_00062",
+      "type": "content",
+      "label": "Cold email open rates are vanity. Reply rate is the only number that matters.",
+      "full_text": "Cold email open rates are vanity. Reply rate is the only number that matters.",
+      "source_id": "src_rd_02",
+      "engagement": 190,
+      "age_days": 106,
+      "topic_ids": [
+        "topic_outbound_sequencing"
+      ],
+      "signal_ids": [
+        "sig_buy_hire_gtm"
+      ],
+      "primary_topic_id": "topic_outbound_sequencing",
+      "color": "#34d399",
+      "size": 8,
+      "is_hero": false
+    },
+    {
+      "id": "post_00063",
+      "type": "content",
+      "label": "Looking for a Clay alternative that's not also $349/mo. Recommendations?",
+      "full_text": "Looking for a Clay alternative that's not also $349/mo. Recommendations?",
+      "source_id": "src_tw_01",
+      "engagement": 234,
+      "age_days": 101,
+      "topic_ids": [
+        "topic_career_transitions",
+        "topic_hiring_gtm_eng",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_buy_clay_alt",
+        "sig_pain_clay_cost",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_revops_automation",
+      "color": "#fbbf24",
+      "size": 9,
+      "is_hero": false
+    },
+    {
+      "id": "post_00064",
+      "type": "content",
+      "label": "Champion tracking is the highest-ROI thing nobody does. Apollo + a cron job.",
+      "full_text": "Champion tracking is the highest-ROI thing nobody does. Apollo + a cron job.",
+      "source_id": "src_li_04",
+      "engagement": 147,
+      "age_days": 32,
+      "topic_ids": [
+        "topic_pipeline_review",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_tool_apollo",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_pipeline_review",
+      "color": "#f97316",
+      "size": 7,
+      "is_hero": false
+    },
+    {
+      "id": "post_00065",
+      "type": "content",
+      "label": "If your sequence has 9+ touches, you don't have a sequence, you have a stalker.",
+      "full_text": "If your sequence has 9+ touches, you don't have a sequence, you have a stalker.",
+      "source_id": "src_rd_03",
+      "engagement": 381,
+      "age_days": 109,
+      "topic_ids": [
+        "topic_outbound_sequencing",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_pain_stale_list"
+      ],
+      "primary_topic_id": "topic_outbound_sequencing",
+      "color": "#34d399",
+      "size": 12,
+      "is_hero": false
+    },
+    {
+      "id": "post_00066",
+      "type": "content",
+      "label": "If your sequence has 9+ touches, you don't have a sequence, you have a stalker.",
+      "full_text": "If your sequence has 9+ touches, you don't have a sequence, you have a stalker.",
+      "source_id": "src_li_04",
+      "engagement": 113,
+      "age_days": 9,
+      "topic_ids": [
+        "topic_outbound_sequencing",
+        "topic_pipeline_review"
+      ],
+      "signal_ids": [
+        "sig_pain_glue_code"
+      ],
+      "primary_topic_id": "topic_outbound_sequencing",
+      "color": "#34d399",
+      "size": 7,
+      "is_hero": false
+    },
+    {
+      "id": "post_00067",
+      "type": "content",
+      "label": "Champion tracking is the highest-ROI thing nobody does. Apollo + a cron job.",
+      "full_text": "Champion tracking is the highest-ROI thing nobody does. Apollo + a cron job.",
+      "source_id": "src_li_04",
+      "engagement": 80,
+      "age_days": 22,
+      "topic_ids": [
+        "topic_data_quality",
+        "topic_hiring_gtm_eng",
+        "topic_pipeline_review",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_tool_apollo"
+      ],
+      "primary_topic_id": "topic_pipeline_review",
+      "color": "#f97316",
+      "size": 6,
+      "is_hero": false
+    },
+    {
+      "id": "post_00068",
+      "type": "content",
+      "label": "Cold email open rates are vanity. Reply rate is the only number that matters.",
+      "full_text": "Cold email open rates are vanity. Reply rate is the only number that matters.",
+      "source_id": "src_li_03",
+      "engagement": 227,
+      "age_days": 50,
+      "topic_ids": [
+        "topic_career_transitions",
+        "topic_outbound_sequencing",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_buy_what_using",
+        "sig_pain_export_sf"
+      ],
+      "primary_topic_id": "topic_outbound_sequencing",
+      "color": "#34d399",
+      "size": 9,
+      "is_hero": false
+    },
+    {
+      "id": "post_00069",
+      "type": "content",
+      "label": "Replaced $500/mo Clay tier with a 200-line Python script. Honest GTM ROI.",
+      "full_text": "Replaced $500/mo Clay tier with a 200-line Python script. Honest GTM ROI.",
+      "source_id": "src_rd_01",
+      "engagement": 303,
+      "age_days": 111,
+      "topic_ids": [
+        "topic_career_transitions",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_pain_clay_cost",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_revops_automation",
+      "color": "#fbbf24",
+      "size": 11,
+      "is_hero": false
+    },
+    {
+      "id": "post_00070",
+      "type": "content",
+      "label": "My title is RevOps Manager but I write more Python than my engineering team.",
+      "full_text": "My title is RevOps Manager but I write more Python than my engineering team.",
+      "source_id": "src_tw_02",
+      "engagement": 283,
+      "age_days": 30,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_career_transitions",
+        "topic_hiring_gtm_eng"
+      ],
+      "signal_ids": [
+        "sig_buy_what_using",
+        "sig_pain_clay_cost",
+        "sig_pain_stale_list"
+      ],
+      "primary_topic_id": "topic_career_transitions",
+      "color": "#94a3b8",
+      "size": 10,
+      "is_hero": false
+    },
+    {
+      "id": "post_00071",
+      "type": "content",
+      "label": "Claude wrote 80% of my last RevOps script. I reviewed the rest. Wild times.",
+      "full_text": "Claude wrote 80% of my last RevOps script. I reviewed the rest. Wild times.",
+      "source_id": "src_li_01",
+      "engagement": 51,
+      "age_days": 105,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_pipeline_review",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_buy_clay_alt",
+        "sig_buy_rfp",
+        "sig_tool_claude"
+      ],
+      "primary_topic_id": "topic_ai_tools",
+      "color": "#60a5fa",
+      "size": 6,
+      "is_hero": false
+    },
+    {
+      "id": "post_00072",
+      "type": "content",
+      "label": "Ex-rep with Python > full-stack engineer learning sales. Empirically every time.",
+      "full_text": "Ex-rep with Python > full-stack engineer learning sales. Empirically every time.",
+      "source_id": "src_li_04",
+      "engagement": 243,
+      "age_days": 78,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_career_transitions"
+      ],
+      "signal_ids": [
+        "sig_buy_rfp"
+      ],
+      "primary_topic_id": "topic_career_transitions",
+      "color": "#94a3b8",
+      "size": 9,
+      "is_hero": false
+    },
+    {
+      "id": "post_00073",
+      "type": "content",
+      "label": "Salesforce reports take longer to build than the analysis itself.",
+      "full_text": "Salesforce reports take longer to build than the analysis itself.",
+      "source_id": "src_rd_02",
+      "engagement": 117,
+      "age_days": 89,
+      "topic_ids": [
+        "topic_career_transitions",
+        "topic_crm_frustration",
+        "topic_pipeline_review"
+      ],
+      "signal_ids": [
+        "sig_pain_export_sf"
+      ],
+      "primary_topic_id": "topic_crm_frustration",
+      "color": "#f87171",
+      "size": 7,
+      "is_hero": false
+    },
+    {
+      "id": "post_00074",
+      "type": "content",
+      "label": "Replaced $500/mo Clay tier with a 200-line Python script. Honest GTM ROI.",
+      "full_text": "Replaced $500/mo Clay tier with a 200-line Python script. Honest GTM ROI.",
+      "source_id": "src_tw_01",
+      "engagement": 292,
+      "age_days": 29,
+      "topic_ids": [
+        "topic_crm_frustration",
+        "topic_data_quality",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_pain_clay_cost",
+        "sig_tool_apollo",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_revops_automation",
+      "color": "#fbbf24",
+      "size": 10,
+      "is_hero": false
+    },
+    {
+      "id": "post_00075",
+      "type": "content",
+      "label": "Our 'Customer' stage has accounts with zero contacts. That's not a customer.",
+      "full_text": "Our 'Customer' stage has accounts with zero contacts. That's not a customer.",
+      "source_id": "src_tw_01",
+      "engagement": 37,
+      "age_days": 76,
+      "topic_ids": [
+        "topic_career_transitions",
+        "topic_data_quality",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_pain_export_sf"
+      ],
+      "primary_topic_id": "topic_data_quality",
+      "color": "#a78bfa",
+      "size": 5,
+      "is_hero": false
+    },
+    {
+      "id": "post_00076",
+      "type": "content",
+      "label": "HubSpot workflows broke silently for 3 weeks and nobody noticed.",
+      "full_text": "HubSpot workflows broke silently for 3 weeks and nobody noticed.",
+      "source_id": "src_rd_03",
+      "engagement": 191,
+      "age_days": 58,
+      "topic_ids": [
+        "topic_ai_tools",
+        "topic_crm_frustration"
+      ],
+      "signal_ids": [
+        "sig_pain_clay_cost",
+        "sig_pain_hs_wf"
+      ],
+      "primary_topic_id": "topic_crm_frustration",
+      "color": "#f87171",
+      "size": 8,
+      "is_hero": false
+    },
+    {
+      "id": "post_00077",
+      "type": "content",
+      "label": "SDR \u2192 AE \u2192 RevOps \u2192 GTM Engineer. The progression is real and underpriced.",
+      "full_text": "SDR \u2192 AE \u2192 RevOps \u2192 GTM Engineer. The progression is real and underpriced.",
+      "source_id": "src_tw_02",
+      "engagement": 81,
+      "age_days": 40,
+      "topic_ids": [
+        "topic_career_transitions",
+        "topic_hiring_gtm_eng",
+        "topic_pipeline_review"
+      ],
+      "signal_ids": [
+        "sig_buy_clay_alt",
+        "sig_pain_glue_code",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_career_transitions",
+      "color": "#94a3b8",
+      "size": 6,
+      "is_hero": false
+    },
+    {
+      "id": "post_00078",
+      "type": "content",
+      "label": "Champion tracking is the highest-ROI thing nobody does. Apollo + a cron job.",
+      "full_text": "Champion tracking is the highest-ROI thing nobody does. Apollo + a cron job.",
+      "source_id": "src_li_03",
+      "engagement": 284,
+      "age_days": 97,
+      "topic_ids": [
+        "topic_data_quality",
+        "topic_pipeline_review",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_buy_hire_gtm",
+        "sig_tool_apollo"
+      ],
+      "primary_topic_id": "topic_pipeline_review",
+      "color": "#f97316",
+      "size": 10,
+      "is_hero": false
+    },
+    {
+      "id": "post_00079",
+      "type": "content",
+      "label": "GTM Engineer JD update: dropped the 'full-stack' requirement. We just need someo\u2026",
+      "full_text": "GTM Engineer JD update: dropped the 'full-stack' requirement. We just need someone who shipped.",
+      "source_id": "src_li_01",
+      "engagement": 15,
+      "age_days": 92,
+      "topic_ids": [
+        "topic_hiring_gtm_eng",
+        "topic_outbound_sequencing",
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_pain_clay_cost"
+      ],
+      "primary_topic_id": "topic_hiring_gtm_eng",
+      "color": "#ec4899",
+      "size": 5,
+      "is_hero": false
+    },
+    {
+      "id": "post_00080",
+      "type": "content",
+      "label": "Replaced $500/mo Clay tier with a 200-line Python script. Honest GTM ROI.",
+      "full_text": "Replaced $500/mo Clay tier with a 200-line Python script. Honest GTM ROI.",
+      "source_id": "src_tw_01",
+      "engagement": 295,
+      "age_days": 37,
+      "topic_ids": [
+        "topic_revops_automation"
+      ],
+      "signal_ids": [
+        "sig_buy_rfp",
+        "sig_buy_what_using",
+        "sig_pain_clay_cost",
+        "sig_tool_clay"
+      ],
+      "primary_topic_id": "topic_revops_automation",
+      "color": "#fbbf24",
+      "size": 10,
+      "is_hero": false
+    },
+    {
+      "id": "eng_00001",
+      "type": "engager",
+      "label": "Patrick Randall",
+      "company": "Travis and Sons",
+      "title": "Founder & CEO",
+      "company_size": 500,
+      "platform": "reddit",
+      "icp_score": 3.4,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.5,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 1.0,
+        "company_size": 1.0,
+        "gtm_relevance": 0.4
+      }
+    },
+    {
+      "id": "eng_00002",
+      "type": "engager",
+      "label": "Sharon Kennedy",
+      "company": "White, Davis and Moon",
+      "title": "GTM Engineer",
+      "company_size": 250,
+      "platform": "twitter",
+      "icp_score": 3.25,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.125,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.25,
+        "company_size": 1.0,
+        "gtm_relevance": 1.0
+      }
+    },
+    {
+      "id": "eng_00003",
+      "type": "engager",
+      "label": "Jessica Ferguson",
+      "company": "Hughes-Sullivan",
+      "title": "GTM Engineer",
+      "company_size": 100,
+      "platform": "linkedin",
+      "icp_score": 3.25,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.125,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.25,
+        "company_size": 1.0,
+        "gtm_relevance": 1.0
+      }
+    },
+    {
+      "id": "eng_00004",
+      "type": "engager",
+      "label": "Alexis Marshall",
+      "company": "Williams, Scott and Krueger",
+      "title": "GTM Engineer",
+      "company_size": 50,
+      "platform": "reddit",
+      "icp_score": 3.0,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 11.5,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.25,
+        "company_size": 0.75,
+        "gtm_relevance": 1.0
+      }
+    },
+    {
+      "id": "eng_00005",
+      "type": "engager",
+      "label": "Mathew Patterson",
+      "company": "Williams and Sons",
+      "title": "Revenue Operations Lead",
+      "company_size": 500,
+      "platform": "reddit",
+      "icp_score": 3.4,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.5,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.5,
+        "company_size": 1.0,
+        "gtm_relevance": 0.9
+      }
+    },
+    {
+      "id": "eng_00006",
+      "type": "engager",
+      "label": "Gary Smith",
+      "company": "Duran Group",
+      "title": "Sales Development Manager",
+      "company_size": 2500,
+      "platform": "linkedin",
+      "icp_score": 3.1,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 11.75,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.5,
+        "company_size": 1.0,
+        "gtm_relevance": 0.6
+      }
+    },
+    {
+      "id": "eng_00007",
+      "type": "engager",
+      "label": "John Kirby",
+      "company": "Collins-Cox",
+      "title": "Account Executive",
+      "company_size": 50,
+      "platform": "twitter",
+      "icp_score": 2.3,
+      "tier": "tier_2",
+      "color": "#fbbf24",
+      "size": 9.75,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.25,
+        "company_size": 0.75,
+        "gtm_relevance": 0.3
+      }
+    },
+    {
+      "id": "eng_00008",
+      "type": "engager",
+      "label": "Eric Anderson",
+      "company": "Parker and Sons",
+      "title": "Director of Marketing",
+      "company_size": 250,
+      "platform": "linkedin",
+      "icp_score": 3.15,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 11.875,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.75,
+        "company_size": 1.0,
+        "gtm_relevance": 0.4
+      }
+    },
+    {
+      "id": "eng_00009",
+      "type": "engager",
+      "label": "Jennifer Sandoval",
+      "company": "Higgins, Petersen and Willis",
+      "title": "Senior RevOps Manager",
+      "company_size": 2500,
+      "platform": "linkedin",
+      "icp_score": 3.4,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.5,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.5,
+        "company_size": 1.0,
+        "gtm_relevance": 0.9
+      }
+    },
+    {
+      "id": "eng_00010",
+      "type": "engager",
+      "label": "Elizabeth Nelson",
+      "company": "King Ltd",
+      "title": "GTM Engineer",
+      "company_size": 100,
+      "platform": "linkedin",
+      "icp_score": 3.25,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.125,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.25,
+        "company_size": 1.0,
+        "gtm_relevance": 1.0
+      }
+    },
+    {
+      "id": "eng_00011",
+      "type": "engager",
+      "label": "Barry Baker MD",
+      "company": "Greene Group",
+      "title": "Product Marketing Manager",
+      "company_size": 5000,
+      "platform": "linkedin",
+      "icp_score": 2.65,
+      "tier": "tier_2",
+      "color": "#fbbf24",
+      "size": 10.625,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.5,
+        "company_size": 0.75,
+        "gtm_relevance": 0.4
+      }
+    },
+    {
+      "id": "eng_00012",
+      "type": "engager",
+      "label": "Christopher Hill",
+      "company": "Walker-Hansen",
+      "title": "GTM Engineer",
+      "company_size": 500,
+      "platform": "linkedin",
+      "icp_score": 3.25,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.125,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.25,
+        "company_size": 1.0,
+        "gtm_relevance": 1.0
+      }
+    },
+    {
+      "id": "eng_00013",
+      "type": "engager",
+      "label": "Sandra Morris MD",
+      "company": "Lloyd Ltd",
+      "title": "Account Executive",
+      "company_size": 250,
+      "platform": "reddit",
+      "icp_score": 2.55,
+      "tier": "tier_2",
+      "color": "#fbbf24",
+      "size": 10.375,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.25,
+        "company_size": 1.0,
+        "gtm_relevance": 0.3
+      }
+    },
+    {
+      "id": "eng_00014",
+      "type": "engager",
+      "label": "John Carter MD",
+      "company": "Smith, Kelly and Contreras",
+      "title": "Founder & CEO",
+      "company_size": 500,
+      "platform": "linkedin",
+      "icp_score": 3.4,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.5,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 1.0,
+        "company_size": 1.0,
+        "gtm_relevance": 0.4
+      }
+    },
+    {
+      "id": "eng_00015",
+      "type": "engager",
+      "label": "Danielle Fernandez",
+      "company": "Lucas-Clark",
+      "title": "GTM Engineer",
+      "company_size": 2500,
+      "platform": "linkedin",
+      "icp_score": 3.25,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.125,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.25,
+        "company_size": 1.0,
+        "gtm_relevance": 1.0
+      }
+    },
+    {
+      "id": "eng_00016",
+      "type": "engager",
+      "label": "Michael Williams Jr.",
+      "company": "Frey, Reed and Carpenter",
+      "title": "Head of RevOps",
+      "company_size": 50,
+      "platform": "linkedin",
+      "icp_score": 3.4,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.5,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.75,
+        "company_size": 0.75,
+        "gtm_relevance": 0.9
+      }
+    },
+    {
+      "id": "eng_00017",
+      "type": "engager",
+      "label": "Bryan Gonzalez",
+      "company": "King, Castillo and Day",
+      "title": "GTM Engineer",
+      "company_size": 500,
+      "platform": "reddit",
+      "icp_score": 3.25,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.125,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.25,
+        "company_size": 1.0,
+        "gtm_relevance": 1.0
+      }
+    },
+    {
+      "id": "eng_00018",
+      "type": "engager",
+      "label": "Connie Morton",
+      "company": "Bauer Inc",
+      "title": "GTM Engineer",
+      "company_size": 250,
+      "platform": "linkedin",
+      "icp_score": 3.25,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.125,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.25,
+        "company_size": 1.0,
+        "gtm_relevance": 1.0
+      }
+    },
+    {
+      "id": "eng_00019",
+      "type": "engager",
+      "label": "Allison Gonzales",
+      "company": "Austin-Carrillo",
+      "title": "Sales Development Manager",
+      "company_size": 5000,
+      "platform": "linkedin",
+      "icp_score": 2.85,
+      "tier": "tier_2",
+      "color": "#fbbf24",
+      "size": 11.125,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.5,
+        "company_size": 0.75,
+        "gtm_relevance": 0.6
+      }
+    },
+    {
+      "id": "eng_00020",
+      "type": "engager",
+      "label": "Wendy Petersen",
+      "company": "Simmons Group",
+      "title": "Senior RevOps Manager",
+      "company_size": 1000,
+      "platform": "linkedin",
+      "icp_score": 3.4,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.5,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.5,
+        "company_size": 1.0,
+        "gtm_relevance": 0.9
+      }
+    },
+    {
+      "id": "eng_00021",
+      "type": "engager",
+      "label": "Alexander Fischer",
+      "company": "Brown and Sons",
+      "title": "Senior RevOps Manager",
+      "company_size": 50,
+      "platform": "reddit",
+      "icp_score": 3.15,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 11.875,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.5,
+        "company_size": 0.75,
+        "gtm_relevance": 0.9
+      }
+    },
+    {
+      "id": "eng_00022",
+      "type": "engager",
+      "label": "Michaela Williams",
+      "company": "Brown, Gibbs and Reeves",
+      "title": "Founder & CEO",
+      "company_size": 5000,
+      "platform": "linkedin",
+      "icp_score": 3.15,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 11.875,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 1.0,
+        "company_size": 0.75,
+        "gtm_relevance": 0.4
+      }
+    },
+    {
+      "id": "eng_00023",
+      "type": "engager",
+      "label": "Michelle Wagner",
+      "company": "Lutz, Spencer and Fisher",
+      "title": "Head of RevOps",
+      "company_size": 2500,
+      "platform": "linkedin",
+      "icp_score": 3.65,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 13.125,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.75,
+        "company_size": 1.0,
+        "gtm_relevance": 0.9
+      }
+    },
+    {
+      "id": "eng_00024",
+      "type": "engager",
+      "label": "Alexis Ortiz",
+      "company": "Johnson Group",
+      "title": "VP of Sales",
+      "company_size": 100,
+      "platform": "linkedin",
+      "icp_score": 3.5,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.75,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 1.0,
+        "company_size": 1.0,
+        "gtm_relevance": 0.5
+      }
+    },
+    {
+      "id": "eng_00025",
+      "type": "engager",
+      "label": "Melody Ryan",
+      "company": "Walker, Hernandez and Atkinson",
+      "title": "Product Marketing Manager",
+      "company_size": 500,
+      "platform": "reddit",
+      "icp_score": 2.9,
+      "tier": "tier_2",
+      "color": "#fbbf24",
+      "size": 11.25,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.5,
+        "company_size": 1.0,
+        "gtm_relevance": 0.4
+      }
+    },
+    {
+      "id": "eng_00026",
+      "type": "engager",
+      "label": "John Johnson",
+      "company": "Braun, Santos and Daniels",
+      "title": "Head of RevOps",
+      "company_size": 2500,
+      "platform": "linkedin",
+      "icp_score": 3.65,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 13.125,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.75,
+        "company_size": 1.0,
+        "gtm_relevance": 0.9
+      }
+    },
+    {
+      "id": "eng_00027",
+      "type": "engager",
+      "label": "Kyle Walters",
+      "company": "Holmes PLC",
+      "title": "Senior RevOps Manager",
+      "company_size": 50,
+      "platform": "linkedin",
+      "icp_score": 3.15,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 11.875,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.5,
+        "company_size": 0.75,
+        "gtm_relevance": 0.9
+      }
+    },
+    {
+      "id": "eng_00028",
+      "type": "engager",
+      "label": "Stephanie Olson",
+      "company": "Turner, Young and Thompson",
+      "title": "VP of Sales",
+      "company_size": 5000,
+      "platform": "linkedin",
+      "icp_score": 3.25,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.125,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 1.0,
+        "company_size": 0.75,
+        "gtm_relevance": 0.5
+      }
+    },
+    {
+      "id": "eng_00029",
+      "type": "engager",
+      "label": "Amy Kelley",
+      "company": "Chan, King and Miller",
+      "title": "Sales Development Manager",
+      "company_size": 2500,
+      "platform": "linkedin",
+      "icp_score": 3.1,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 11.75,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.5,
+        "company_size": 1.0,
+        "gtm_relevance": 0.6
+      }
+    },
+    {
+      "id": "eng_00030",
+      "type": "engager",
+      "label": "Brian Brown",
+      "company": "Sanders-Cook",
+      "title": "VP of Sales",
+      "company_size": 2500,
+      "platform": "reddit",
+      "icp_score": 3.5,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.75,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 1.0,
+        "company_size": 1.0,
+        "gtm_relevance": 0.5
+      }
+    },
+    {
+      "id": "eng_00031",
+      "type": "engager",
+      "label": "William Doyle",
+      "company": "Lawson, Richards and Armstrong",
+      "title": "Director of Marketing",
+      "company_size": 250,
+      "platform": "linkedin",
+      "icp_score": 3.15,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 11.875,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.75,
+        "company_size": 1.0,
+        "gtm_relevance": 0.4
+      }
+    },
+    {
+      "id": "eng_00032",
+      "type": "engager",
+      "label": "Alexander Lopez",
+      "company": "Tate PLC",
+      "title": "VP of Sales",
+      "company_size": 250,
+      "platform": "linkedin",
+      "icp_score": 3.5,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.75,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 1.0,
+        "company_size": 1.0,
+        "gtm_relevance": 0.5
+      }
+    },
+    {
+      "id": "eng_00033",
+      "type": "engager",
+      "label": "Casey Baker",
+      "company": "Webb-Bailey",
+      "title": "SDR",
+      "company_size": 1000,
+      "platform": "reddit",
+      "icp_score": 2.55,
+      "tier": "tier_2",
+      "color": "#fbbf24",
+      "size": 10.375,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.25,
+        "company_size": 1.0,
+        "gtm_relevance": 0.3
+      }
+    },
+    {
+      "id": "eng_00034",
+      "type": "engager",
+      "label": "Annette Williams",
+      "company": "Lawrence-Cummings",
+      "title": "SDR",
+      "company_size": 2500,
+      "platform": "reddit",
+      "icp_score": 2.55,
+      "tier": "tier_2",
+      "color": "#fbbf24",
+      "size": 10.375,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.25,
+        "company_size": 1.0,
+        "gtm_relevance": 0.3
+      }
+    },
+    {
+      "id": "eng_00035",
+      "type": "engager",
+      "label": "William Thornton",
+      "company": "Farrell, Barrett and Bryant",
+      "title": "Senior RevOps Manager",
+      "company_size": 250,
+      "platform": "linkedin",
+      "icp_score": 3.4,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.5,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.5,
+        "company_size": 1.0,
+        "gtm_relevance": 0.9
+      }
+    },
+    {
+      "id": "eng_00036",
+      "type": "engager",
+      "label": "Luis Anderson",
+      "company": "Guerrero and Sons",
+      "title": "Software Engineer",
+      "company_size": 2500,
+      "platform": "linkedin",
+      "icp_score": 1.65,
+      "tier": "tier_3",
+      "color": "#f97316",
+      "size": 8.125,
+      "score_breakdown": {
+        "b2b": 0.3,
+        "seniority": 0.25,
+        "company_size": 1.0,
+        "gtm_relevance": 0.1
+      }
+    },
+    {
+      "id": "eng_00037",
+      "type": "engager",
+      "label": "Carolyn Russell",
+      "company": "West PLC",
+      "title": "Revenue Operations Lead",
+      "company_size": 250,
+      "platform": "twitter",
+      "icp_score": 3.4,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.5,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.5,
+        "company_size": 1.0,
+        "gtm_relevance": 0.9
+      }
+    },
+    {
+      "id": "eng_00038",
+      "type": "engager",
+      "label": "Rachael Holmes",
+      "company": "Salinas, Wolf and Gallegos",
+      "title": "GTM Engineer",
+      "company_size": 250,
+      "platform": "linkedin",
+      "icp_score": 3.25,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.125,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.25,
+        "company_size": 1.0,
+        "gtm_relevance": 1.0
+      }
+    },
+    {
+      "id": "eng_00039",
+      "type": "engager",
+      "label": "Kaitlyn Murphy",
+      "company": "Smith, Rios and Smith",
+      "title": "Senior RevOps Manager",
+      "company_size": 250,
+      "platform": "twitter",
+      "icp_score": 3.4,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.5,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.5,
+        "company_size": 1.0,
+        "gtm_relevance": 0.9
+      }
+    },
+    {
+      "id": "eng_00040",
+      "type": "engager",
+      "label": "Joshua Palmer",
+      "company": "Allen and Sons",
+      "title": "GTM Engineer",
+      "company_size": 500,
+      "platform": "reddit",
+      "icp_score": 3.25,
+      "tier": "tier_1",
+      "color": "#4ade80",
+      "size": 12.125,
+      "score_breakdown": {
+        "b2b": 1.0,
+        "seniority": 0.25,
+        "company_size": 1.0,
+        "gtm_relevance": 1.0
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_li_03",
+      "target": "post_hero_001",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_02",
+      "target": "post_hero_002",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_tw_01",
+      "target": "post_hero_003",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_04",
+      "target": "post_hero_004",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_03",
+      "target": "post_hero_005",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_02",
+      "target": "post_00006",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_05",
+      "target": "post_00007",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_02",
+      "target": "post_00008",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_02",
+      "target": "post_00009",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_tw_02",
+      "target": "post_00010",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_02",
+      "target": "post_00011",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_04",
+      "target": "post_00012",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_02",
+      "target": "post_00013",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_01",
+      "target": "post_00014",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_tw_02",
+      "target": "post_00015",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_01",
+      "target": "post_00016",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_tw_01",
+      "target": "post_00017",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_02",
+      "target": "post_00018",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_tw_01",
+      "target": "post_00019",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_01",
+      "target": "post_00020",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_03",
+      "target": "post_00021",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_05",
+      "target": "post_00022",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_02",
+      "target": "post_00023",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_03",
+      "target": "post_00024",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_01",
+      "target": "post_00025",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_04",
+      "target": "post_00026",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_04",
+      "target": "post_00027",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_01",
+      "target": "post_00028",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_02",
+      "target": "post_00029",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_01",
+      "target": "post_00030",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_01",
+      "target": "post_00031",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_02",
+      "target": "post_00032",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_03",
+      "target": "post_00033",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_tw_02",
+      "target": "post_00034",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_05",
+      "target": "post_00035",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_03",
+      "target": "post_00036",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_04",
+      "target": "post_00037",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_tw_01",
+      "target": "post_00038",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_03",
+      "target": "post_00039",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_tw_01",
+      "target": "post_00040",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_tw_01",
+      "target": "post_00041",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_01",
+      "target": "post_00042",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_tw_01",
+      "target": "post_00043",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_04",
+      "target": "post_00044",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_04",
+      "target": "post_00045",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_02",
+      "target": "post_00046",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_05",
+      "target": "post_00047",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_01",
+      "target": "post_00048",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_04",
+      "target": "post_00049",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_02",
+      "target": "post_00050",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_01",
+      "target": "post_00051",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_02",
+      "target": "post_00052",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_02",
+      "target": "post_00053",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_02",
+      "target": "post_00054",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_01",
+      "target": "post_00055",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_tw_02",
+      "target": "post_00056",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_02",
+      "target": "post_00057",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_02",
+      "target": "post_00058",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_03",
+      "target": "post_00059",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_05",
+      "target": "post_00060",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_02",
+      "target": "post_00061",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_02",
+      "target": "post_00062",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_tw_01",
+      "target": "post_00063",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_04",
+      "target": "post_00064",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_03",
+      "target": "post_00065",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_04",
+      "target": "post_00066",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_04",
+      "target": "post_00067",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_03",
+      "target": "post_00068",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_01",
+      "target": "post_00069",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_tw_02",
+      "target": "post_00070",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_01",
+      "target": "post_00071",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_04",
+      "target": "post_00072",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_02",
+      "target": "post_00073",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_tw_01",
+      "target": "post_00074",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_tw_01",
+      "target": "post_00075",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_rd_03",
+      "target": "post_00076",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_tw_02",
+      "target": "post_00077",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_03",
+      "target": "post_00078",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_li_01",
+      "target": "post_00079",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "src_tw_01",
+      "target": "post_00080",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "source": "eng_00001",
+      "target": "post_00040",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00001",
+      "target": "post_00043",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00002",
+      "target": "post_00047",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00002",
+      "target": "post_00080",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00002",
+      "target": "post_00026",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00003",
+      "target": "post_00027",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00003",
+      "target": "post_00039",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00003",
+      "target": "post_00017",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00003",
+      "target": "post_00054",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00004",
+      "target": "post_00008",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00004",
+      "target": "post_00034",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00004",
+      "target": "post_00039",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00005",
+      "target": "post_00009",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00005",
+      "target": "post_00062",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00005",
+      "target": "post_00034",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00005",
+      "target": "post_00071",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00006",
+      "target": "post_00008",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00006",
+      "target": "post_00031",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00006",
+      "target": "post_00046",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00007",
+      "target": "post_00046",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00008",
+      "target": "post_00068",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00008",
+      "target": "post_00038",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00008",
+      "target": "post_00052",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00008",
+      "target": "post_00035",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00009",
+      "target": "post_00045",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00009",
+      "target": "post_00058",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00009",
+      "target": "post_00075",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00009",
+      "target": "post_00063",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00009",
+      "target": "post_hero_002",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00009",
+      "target": "post_00007",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00010",
+      "target": "post_00027",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00010",
+      "target": "post_00066",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00010",
+      "target": "post_hero_004",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00011",
+      "target": "post_00055",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00011",
+      "target": "post_hero_004",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00012",
+      "target": "post_00051",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00012",
+      "target": "post_00042",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00012",
+      "target": "post_00010",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00012",
+      "target": "post_00008",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00012",
+      "target": "post_00018",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00013",
+      "target": "post_00047",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00013",
+      "target": "post_00007",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00013",
+      "target": "post_00071",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00013",
+      "target": "post_00009",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00013",
+      "target": "post_00054",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00013",
+      "target": "post_00070",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00014",
+      "target": "post_00029",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00014",
+      "target": "post_00034",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00014",
+      "target": "post_00020",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00014",
+      "target": "post_00018",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00014",
+      "target": "post_00074",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00015",
+      "target": "post_00051",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00016",
+      "target": "post_00077",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00016",
+      "target": "post_00014",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00016",
+      "target": "post_00006",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00016",
+      "target": "post_00039",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00016",
+      "target": "post_00010",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00017",
+      "target": "post_hero_004",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00017",
+      "target": "post_00011",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00017",
+      "target": "post_00049",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00018",
+      "target": "post_00015",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00018",
+      "target": "post_00010",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00018",
+      "target": "post_00008",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "repost"
+    },
+    {
+      "source": "eng_00018",
+      "target": "post_00009",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00019",
+      "target": "post_00038",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "repost"
+    },
+    {
+      "source": "eng_00019",
+      "target": "post_00028",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00019",
+      "target": "post_00051",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00019",
+      "target": "post_hero_004",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00019",
+      "target": "post_00024",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00019",
+      "target": "post_00019",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00020",
+      "target": "post_00043",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00020",
+      "target": "post_00013",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00020",
+      "target": "post_00007",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00020",
+      "target": "post_00073",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00020",
+      "target": "post_00042",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00020",
+      "target": "post_00059",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00021",
+      "target": "post_00079",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00021",
+      "target": "post_00013",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00021",
+      "target": "post_00018",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00021",
+      "target": "post_00042",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00021",
+      "target": "post_hero_001",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00021",
+      "target": "post_00058",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00022",
+      "target": "post_00067",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00023",
+      "target": "post_hero_001",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00023",
+      "target": "post_00053",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00023",
+      "target": "post_00076",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00024",
+      "target": "post_00061",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00024",
+      "target": "post_00071",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00024",
+      "target": "post_00066",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00025",
+      "target": "post_00080",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "repost"
+    },
+    {
+      "source": "eng_00025",
+      "target": "post_00032",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00025",
+      "target": "post_hero_001",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00025",
+      "target": "post_00040",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00025",
+      "target": "post_00039",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00026",
+      "target": "post_00037",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00026",
+      "target": "post_00045",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00027",
+      "target": "post_00067",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00027",
+      "target": "post_00018",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00027",
+      "target": "post_00050",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00027",
+      "target": "post_00040",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00028",
+      "target": "post_00068",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00028",
+      "target": "post_00034",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00028",
+      "target": "post_00035",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00028",
+      "target": "post_00061",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00029",
+      "target": "post_00033",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00029",
+      "target": "post_00013",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00029",
+      "target": "post_00076",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00030",
+      "target": "post_00038",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00030",
+      "target": "post_00039",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00030",
+      "target": "post_00044",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00030",
+      "target": "post_00031",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00030",
+      "target": "post_00026",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00030",
+      "target": "post_00040",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00031",
+      "target": "post_00075",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00031",
+      "target": "post_00035",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00031",
+      "target": "post_00042",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00031",
+      "target": "post_00076",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00032",
+      "target": "post_00078",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00032",
+      "target": "post_00041",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00032",
+      "target": "post_00010",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00032",
+      "target": "post_00067",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00033",
+      "target": "post_00007",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00033",
+      "target": "post_00080",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00033",
+      "target": "post_00030",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00033",
+      "target": "post_00016",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00033",
+      "target": "post_00048",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00034",
+      "target": "post_00043",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00034",
+      "target": "post_00067",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00034",
+      "target": "post_00069",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00034",
+      "target": "post_00017",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00034",
+      "target": "post_00074",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00034",
+      "target": "post_00079",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00035",
+      "target": "post_00073",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "repost"
+    },
+    {
+      "source": "eng_00035",
+      "target": "post_00041",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00035",
+      "target": "post_00031",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00036",
+      "target": "post_00071",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00036",
+      "target": "post_hero_002",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00036",
+      "target": "post_00026",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00036",
+      "target": "post_00045",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00037",
+      "target": "post_00051",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "repost"
+    },
+    {
+      "source": "eng_00037",
+      "target": "post_00040",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00038",
+      "target": "post_00045",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00038",
+      "target": "post_00064",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00038",
+      "target": "post_hero_005",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00038",
+      "target": "post_00023",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00038",
+      "target": "post_00038",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00039",
+      "target": "post_00039",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00039",
+      "target": "post_00018",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00039",
+      "target": "post_00033",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00039",
+      "target": "post_hero_001",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00039",
+      "target": "post_00023",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00039",
+      "target": "post_00073",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00040",
+      "target": "post_00032",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00040",
+      "target": "post_00079",
+      "type": "engaged",
+      "weight": 2,
+      "engagement_type": "comment"
+    },
+    {
+      "source": "eng_00040",
+      "target": "post_00006",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "repost"
+    },
+    {
+      "source": "eng_00040",
+      "target": "post_00023",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    },
+    {
+      "source": "eng_00040",
+      "target": "post_00036",
+      "type": "engaged",
+      "weight": 1,
+      "engagement_type": "reaction"
+    }
+  ],
+  "stats": {
+    "n_sources": 10,
+    "n_content_items": 80,
+    "n_engagers": 40,
+    "n_topics": 8,
+    "n_signals": 12,
+    "n_engagements": 157,
+    "tier_distribution": {
+      "tier_1": 32,
+      "tier_2": 7,
+      "tier_3": 1
+    },
+    "tier_colors": {
+      "tier_1": "#4ade80",
+      "tier_2": "#fbbf24",
+      "tier_3": "#f97316",
+      "not_icp": "#64748b"
+    }
+  }
+}
